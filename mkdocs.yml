@@ -3,7 +3,7 @@ site_name: はじめてのGitHub 入門ガイド
 site_description: 非エンジニア向け・GitHubをやさしく学ぶ入門ガイド
 site_author: はじめてのGitHub 入門ガイド
 # GitHub Pages で公開するときのURL
-site_url: "https://sup-kajiwara.github.io/github-guide/"
+site_url: "https://sup-mkajiwara.github.io/github-guide/"
 
 # ===== 見た目（Material テーマ）=====
 theme:
