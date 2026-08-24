@@ -655,10 +655,27 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="3. ターミナルでも使う：CLI版（任意）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        入れると何がうれしい？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         この章のまとめ
@@ -1402,10 +1419,27 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="3. ターミナルでも使う：CLI版（任意）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        入れると何がうれしい？
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         この章のまとめ
@@ -1456,12 +1490,46 @@
 <ol>
 <li>VSCodeの左側の <strong>拡張機能（四角が4つのアイコン <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 13.5c0 1.76-1.3 3.22-3 3.46V20a2 2 0 0 1-2 2h-3.8v-.3a2.7 2.7 0 0 0-2.7-2.7c-1.5 0-2.7 1.21-2.7 2.7v.3H4a2 2 0 0 1-2-2v-3.8h.3C3.79 16.2 5 15 5 13.5s-1.21-2.7-2.7-2.7H2V7a2 2 0 0 1 2-2h3.04c.24-1.7 1.7-3 3.46-3s3.22 1.3 3.46 3H17a2 2 0 0 1 2 2v3.04c1.7.24 3 1.7 3 3.46M17 15h1.5a1.5 1.5 0 0 0 1.5-1.5 1.5 1.5 0 0 0-1.5-1.5H17V7h-5V5.5A1.5 1.5 0 0 0 10.5 4 1.5 1.5 0 0 0 9 5.5V7H4v2.12c1.76.68 3 2.38 3 4.38s-1.25 3.7-3 4.38V20h2.12a4.7 4.7 0 0 1 4.38-3c2 0 3.7 1.25 4.38 3H17z"/></svg></span>）</strong> を開く</li>
 <li>検索欄に <strong><code>Claude</code></strong> と入力する</li>
-<li>表示された拡張機能を <strong>インストール（Install）</strong> する</li>
+<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 13h-2V7h2m-2 8h2v2h-2m4.73-14H8.27L3 8.27v7.46L8.27 21h7.46L21 15.73V8.27z"/></svg></span> <strong>発行元（Publisher）が <code>Anthropic</code> かどうかを必ず確認する</strong>（下の <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg></span> を参照）</li>
+<li>確認できたら <strong>インストール（Install）</strong> を押す</li>
 <li>画面の案内に従って、Claudeのアカウントでサインインする</li>
 </ol>
+<div class="admonition danger">
+<p class="admonition-title"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg></span> 発行元の確認は必ず（ここだけは飛ばさない）</p>
+<p>拡張機能ストアには、<strong>本物に似せた名前のニセ拡張</strong> が混ざることがあります。
+ニセ拡張を入れると、PC内のファイルや入力内容を盗まれるおそれがあります。</p>
+<p>入れる前に、拡張の名前をクリックして詳細ページを開き、<strong>次の3点</strong> を確認してください。</p>
+<table>
+<thead>
+<tr>
+<th>確認すること</th>
+<th>正しい状態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>発行元（Publisher）</strong></td>
+<td><strong><code>Anthropic</code></strong>（<code>anthropic.claude-code</code> のような表記）</td>
+</tr>
+<tr>
+<td><strong>認証済みバッジ</strong></td>
+<td>発行元名のよこに <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68zm-13 5-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9z"/></svg></span> （Verified）が付いている</td>
+</tr>
+<tr>
+<td><strong>インストール数</strong></td>
+<td>数十万〜数百万規模。<strong>極端に少ないものは疑う</strong></td>
+</tr>
+</tbody>
+</table>
+<p>ひとつでも合わなければ <strong>入れずに閉じてください</strong>。似た名前・似たアイコンでも別物です。</p>
+<pre class="mermaid"><code>flowchart LR
+    A[Claude で検索] --&gt; B{発行元は&lt;br/&gt;Anthropic？}
+    B -- はい --&gt; C[インストール ✅]
+    B -- いいえ --&gt; D[入れない 🚫&lt;br/&gt;社内の担当に相談]</code></pre>
+</div>
 <div class="admonition quote">
 <p class="admonition-title">📷 画面キャプチャ枠（あとで差し込み）</p>
-<p>拡張機能で「Claude」を検索した画面を入れます。
+<p>拡張機能で「Claude」を検索し、<strong>発行元 Anthropic が見える</strong> 状態の画面を入れます。
 <code>![Claude拡張のインストール](images/setup-03-claude.png){ width="700" }</code></p>
 </div>
 <div class="admonition tip">
@@ -1499,6 +1567,42 @@
 <h2 id="3-cli">3. ターミナルでも使う：CLI版（任意）<a class="headerlink" href="#3-cli" title="Permanent link">&para;</a></h2>
 <p>VSCodeの拡張だけで十分な人は、ここは <strong>飛ばしてOK</strong> です。
 ターミナルから <code>claude</code> を直接使いたい人向けに、CLI版も入れられます（<strong>Node.js は不要</strong>）。</p>
+<h3 id="_1">入れると何がうれしい？<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>メリット</th>
+<th>どんなとき便利か</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VSCodeを開かなくても使える</strong></td>
+<td>「ちょっと1つ聞きたい／直したいだけ」のときに、すぐ起動できる</td>
+</tr>
+<tr>
+<td><strong>同時に何本も動かせる</strong></td>
+<td>ターミナルを2つ開けば、別々のフォルダの作業を <strong>並行</strong> で進められる</td>
+</tr>
+<tr>
+<td><strong>手元のPC以外でも使える</strong></td>
+<td>社内サーバーなどに接続した先（SSH）でも、同じように頼める</td>
+</tr>
+<tr>
+<td><strong>決まった作業を自動化できる</strong></td>
+<td>「毎朝このチェックをする」のような繰り返し作業を、あとから自動実行にできる</td>
+</tr>
+<tr>
+<td><strong>拡張の調子が悪いときの逃げ道</strong></td>
+<td>VSCodeが重い・拡張が動かないときも、CLIなら作業を続けられる</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">急がなくて大丈夫</p>
+<p>最初は拡張版だけで十分です。「毎回VSCodeを開くのが面倒だな」と感じたら、そのときに入れれば十分間に合います。
+どちらを使っても、<strong>頼み方（日本語で書く）は同じ</strong> です。</p>
+</div>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> Mac / Linux</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows（PowerShell）</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1517,7 +1621,7 @@
 <p>すでに Node.js（18以上）がある人は <code>npm install -g @anthropic-ai/claude-code</code> でも入れられます。どれか1つの方法でOKです。</p>
 </div>
 <hr />
-<h2 id="_1">この章のまとめ<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_2">この章のまとめ<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Claude拡張を入れた</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> サインインして、日本語で話しかけられた</li>
