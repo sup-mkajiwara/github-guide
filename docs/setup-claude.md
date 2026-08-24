@@ -39,9 +39,10 @@ flowchart LR
 
     | 確認すること | 正しい状態 |
     |---|---|
-    | **発行元（Publisher）** | **`Anthropic`**（`anthropic.claude-code` のような表記） |
-    | **認証済みバッジ** | 発行元名のよこに :material-check-decagram: （Verified）が付いている |
-    | **インストール数** | 数十万〜数百万規模。**極端に少ないものは疑う** |
+    | **拡張名** | **`Claude Code for VS Code`** |
+    | **発行元（Publisher）** | **`Anthropic`** と表示されている |
+    | **認証済みバッジ** | 発行元名のよこに :material-check-decagram: （青いチェック）と **`anthropic.com`** が付いている |
+    | **インストール数** | **2,000万件以上**。数百件〜数千件しかないものは疑う |
 
     ひとつでも合わなければ **入れずに閉じてください**。似た名前・似たアイコンでも別物です。
 
@@ -52,9 +53,20 @@ flowchart LR
         B -- いいえ --> D[入れない 🚫<br/>社内の担当に相談]
     ```
 
-!!! quote "📷 画面キャプチャ枠（あとで差し込み）"
-    拡張機能で「Claude」を検索し、**発行元 Anthropic が見える** 状態の画面を入れます。
-    `![Claude拡張のインストール](images/setup-03-claude.png){ width="700" }`
+<figure markdown="span">
+  ![Claude Code for VS Code の拡張機能ページ。発行元 Anthropic と認証済みバッジが表示されている](images/setup-03-claude.png){ width="700" }
+  <figcaption>これが本物の画面です。拡張名の下の <strong>Anthropic</strong>・青い認証済みバッジ・<strong>anthropic.com</strong> を確認してください</figcaption>
+</figure>
+
+上の画面で見るべきポイントは、次の3つです。
+
+- **拡張名**：`Claude Code for VS Code`
+- **発行元**：`Anthropic` ＋ :material-check-decagram: 青い認証済みバッジ ＋ ドメイン `anthropic.com`
+- **インストール数**：2,300万件以上（画像は撮影時点の数値です）
+
+!!! note "ボタンの表示が違うとき"
+    上の画像は **すでに入れたあと** の画面なので「無効にする／アンインストール」と出ています。
+    まだ入れていない場合は、同じ場所に **インストール（Install）** ボタンが表示されます。
 
 !!! tip "Node.js などの事前準備は不要です"
     Claude Code の VSCode拡張には、必要なもの（CLI）が **内蔵** されています。
