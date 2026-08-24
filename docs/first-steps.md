@@ -42,7 +42,7 @@ flowchart LR
     Claudeが手順を進め、確認が必要なところは聞いてくれます。
 
     !!! note "Claudeも内部で `gh` を使います"
-        リポジトリ作成には `gh`（GitHub CLI）が使われます。未導入でも、Claudeに **「`gh` を入れて」** と頼めば導入から進めてくれます（→ [PCの準備（GitHub CLI）](setup-pc.md#github-cli-gh)）。
+        リポジトリ作成には `gh`（GitHub CLI）が使われます。未導入でも、Claudeに **「`gh` を入れて」** と頼めば導入から進めてくれます（→ [GitとGitHubをつなぐ（GitHub CLI）](setup-git.md#github-cli-gh)）。
 
 === ":material-microsoft-visual-studio-code: VSCodeで操作"
 
@@ -62,7 +62,7 @@ flowchart LR
     ```
 
     !!! note "`gh`（GitHub CLI）の準備"
-        このタブには **GitHub CLI（`gh`）** が必要です。入れ方は [PCの準備（GitHub CLI）](setup-pc.md#github-cli-gh) を参照してください。
+        このタブには **GitHub CLI（`gh`）** が必要です。入れ方は [GitとGitHubをつなぐ（GitHub CLI）](setup-git.md#github-cli-gh) を参照してください。
         未導入なら、**Claudeに頼む**か、他のタブ（VSCode／GitHubサイト）の方法でもOKです。
 
 === ":material-web: GitHubサイトで操作"

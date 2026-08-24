@@ -51,8 +51,9 @@ nav:
       - UI/UXの用語集: ui-vocab.md
   - AIで開発するとは: ai-intro.md
   - 準備する:
-      - アカウント作成と初期設定: account-setup.md
-      - PCの準備（VSCode・Git・Claude）: setup-pc.md
+      - VSCodeを入れる: setup-vscode.md
+      - Claudeを入れる: setup-claude.md
+      - GitとGitHubをつなぐ: setup-git.md
   - GitHubの基本:
       - 最初の一歩（リポジトリを作る）: first-steps.md
       - 変更を記録する（コミット）: commit-push.md

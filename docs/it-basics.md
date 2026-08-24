@@ -97,7 +97,7 @@ Git/GitHub特有の言葉は [GitHubの用語集](glossary.md) にまとめて�
 | 得意なこと | かんたんな操作・確認 | 決まった作業を速く・正確に |
 
 !!! success "CUIが苦手でも大丈夫"
-    コマンド（CUI）が不安でも、**Claudeに日本語で頼めば代わりに実行してくれます**（→ [PCの準備](setup-pc.md)）。
+    コマンド（CUI）が不安でも、**Claudeに日本語で頼めば代わりに実行してくれます**（→ [Claudeを入れる](setup-claude.md)）。
 
 ### :material-console-line: ターミナル（Terminal） ／ :material-code-greater-than: シェル（Shell）
 - **ターミナル** … コマンド（CUI）を打ち込むための **画面**。VSCodeにも内蔵。
@@ -221,4 +221,4 @@ Git/GitHub特有の言葉は [GitHubの用語集](glossary.md) にまとめて�
     - 画面の部品の名前（ボタン・モーダルなど）→ [UI/UXの用語集](ui-vocab.md)
     - 見た目・デザインの言葉 → [デザインの用語集](design-vocab.md)
 
-言葉のイメージがつかめたら、[PCの準備](setup-pc.md) に進んで、実際の画面で確かめてみましょう。
+言葉のイメージがつかめたら、[VSCodeを入れる](setup-vscode.md) に進んで、実際の画面で確かめてみましょう。

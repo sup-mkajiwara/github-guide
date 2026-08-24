@@ -77,7 +77,7 @@ flowchart LR
     ```
 
     !!! note "Claudeも内部で `gh` を使います"
-        プルリク作成には `gh`（GitHub CLI）が使われます。未導入なら Claudeに **「`gh` を入れて」** と頼むか、[PCの準備（GitHub CLI）](setup-pc.md#github-cli-gh) を参照してください。
+        プルリク作成には `gh`（GitHub CLI）が使われます。未導入なら Claudeに **「`gh` を入れて」** と頼むか、[GitとGitHubをつなぐ（GitHub CLI）](setup-git.md#github-cli-gh) を参照してください。
 
 === ":material-microsoft-visual-studio-code: VSCodeで操作"
 
@@ -95,7 +95,7 @@ flowchart LR
     ```
 
     !!! note "`gh`（GitHub CLI）の準備"
-        このタブには **GitHub CLI（`gh`）** が必要です（入れ方は [PCの準備（GitHub CLI）](setup-pc.md#github-cli-gh)）。
+        このタブには **GitHub CLI（`gh`）** が必要です（入れ方は [GitとGitHubをつなぐ（GitHub CLI）](setup-git.md#github-cli-gh)）。
         作成後、URLが表示されるのでブラウザで確認できます。
 
 === ":material-web: GitHubサイトで操作"

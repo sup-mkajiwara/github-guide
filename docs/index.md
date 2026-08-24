@@ -85,21 +85,29 @@ flowchart LR
 
     [:octicons-arrow-right-24: 開く](glossary.md)
 
--   :material-account-plus:{ .lg .middle } &nbsp;**アカウント作成**
+-   :material-laptop:{ .lg .middle } &nbsp;**VSCodeを入れる**
 
     ---
 
-    GitHubに登録して始める
+    まずは作業する場所をつくる
 
-    [:octicons-arrow-right-24: 開く](account-setup.md)
+    [:octicons-arrow-right-24: 開く](setup-vscode.md)
 
--   :material-laptop:{ .lg .middle } &nbsp;**PCの準備**
+-   :material-robot-happy-outline:{ .lg .middle } &nbsp;**Claudeを入れる**
 
     ---
 
-    VSCode・Git・Claudeを入れる
+    日本語で頼める相棒を用意する
 
-    [:octicons-arrow-right-24: 開く](setup-pc.md)
+    [:octicons-arrow-right-24: 開く](setup-claude.md)
+
+-   :material-source-branch:{ .lg .middle } &nbsp;**GitとGitHub**
+
+    ---
+
+    アカウント作成とPCの接続
+
+    [:octicons-arrow-right-24: 開く](setup-git.md)
 
 -   :material-rocket-launch:{ .lg .middle } &nbsp;**最初の一歩**
 
