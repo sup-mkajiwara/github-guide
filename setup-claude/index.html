@@ -12,13 +12,13 @@
         <meta name="author" content="はじめてのGitHub 入門ガイド">
       
       
-        <link rel="canonical" href="https://sup-kajiwara.github.io/github-guide/setup-pc/">
+        <link rel="canonical" href="https://sup-mkajiwara.github.io/github-guide/setup-claude/">
       
       
-        <link rel="prev" href="../account-setup/">
+        <link rel="prev" href="../setup-vscode/">
       
       
-        <link rel="next" href="../first-steps/">
+        <link rel="next" href="../setup-git/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>PCの準備（VSCode・Git・Claude） - はじめてのGitHub 入門ガイド</title>
+        <title>Claudeを入れる - はじめてのGitHub 入門ガイド</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pcvscodegitclaude" class="md-skip">
+        <a href="#claude" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PCの準備（VSCode・Git・Claude）
+              Claudeを入れる
             
           </span>
         </div>
@@ -537,14 +537,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../account-setup/" class="md-nav__link">
+      <a href="../setup-vscode/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    アカウント作成と初期設定
+    VSCodeを入れる
   
 
     
@@ -581,7 +581,7 @@
   <span class="md-ellipsis">
     
   
-    PCの準備（VSCode・Git・Claude）
+    Claudeを入れる
   
 
     
@@ -599,7 +599,7 @@
   <span class="md-ellipsis">
     
   
-    PCの準備（VSCode・Git・Claude）
+    Claudeを入れる
   
 
     
@@ -625,21 +625,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vscodeclaude" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        このガイドの進め方（VSCode＋Claude）
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#1-vscode" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. VSCode（ブイエスコード）を入れる
+        1. VSCode拡張として入れる（おすすめ）
       
     </span>
   </a>
@@ -647,10 +636,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-git" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Git（ギット）を入れる
+        2. 使ってみる（お願いの仕方）
       
     </span>
   </a>
@@ -658,10 +647,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-vscodegithub" class="md-nav__link">
+  <a href="#3-cli" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. VSCodeからGitHubにサインインする
+        3. ターミナルでも使う：CLI版（任意）
       
     </span>
   </a>
@@ -669,74 +658,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-claude" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Claude（クロード）を入れる
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Claude（クロード）を入れる">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cli" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ターミナルでも使う：CLI版（任意）
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#github-cli-gh" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GitHub CLI（gh）を入れる（GitHub操作におすすめ）
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="GitHub CLI（gh）を入れる（GitHub操作におすすめ）">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#claude" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        いちばん簡単：Claudeに頼む
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        自分で入れる場合
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         この章のまとめ
@@ -750,6 +672,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup-git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitとGitHubをつなぐ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1422,21 +1372,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vscodeclaude" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        このガイドの進め方（VSCode＋Claude）
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#1-vscode" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. VSCode（ブイエスコード）を入れる
+        1. VSCode拡張として入れる（おすすめ）
       
     </span>
   </a>
@@ -1444,10 +1383,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-git" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Git（ギット）を入れる
+        2. 使ってみる（お願いの仕方）
       
     </span>
   </a>
@@ -1455,10 +1394,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-vscodegithub" class="md-nav__link">
+  <a href="#3-cli" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. VSCodeからGitHubにサインインする
+        3. ターミナルでも使う：CLI版（任意）
       
     </span>
   </a>
@@ -1466,74 +1405,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-claude" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Claude（クロード）を入れる
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Claude（クロード）を入れる">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cli" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ターミナルでも使う：CLI版（任意）
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#github-cli-gh" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GitHub CLI（gh）を入れる（GitHub操作におすすめ）
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="GitHub CLI（gh）を入れる（GitHub操作におすすめ）">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#claude" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        いちばん簡単：Claudeに頼む
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        自分で入れる場合
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         この章のまとめ
@@ -1560,113 +1432,12 @@
 
 
 
-<h1 id="pcvscodegitclaude">PCの準備（VSCode・Git・Claude）<a class="headerlink" href="#pcvscodegitclaude" title="Permanent link">&para;</a></h1>
+<h1 id="claude">Claudeを入れる<a class="headerlink" href="#claude" title="Permanent link">&para;</a></h1>
 <div class="admonition info">
 <p class="admonition-title">この章のゴール</p>
-<p>自分のPCに <strong>VSCode</strong>・<strong>Git</strong>・<strong>Claude</strong> を入れて、
-「GitHubの操作を、画面の案内とClaudeへのお願いで進められる」状態にすること。</p>
+<p>VSCodeの中で <strong>Claude（クロード）</strong> に日本語で話しかけられる状態になること。
+ここまで来ると、次の Git / GitHub の準備を <strong>Claudeに頼んで</strong> 進められます。</p>
 </div>
-<figure>
-  <img alt="アプリをインストールするイメージ" src="../images/illustrations/app-installation.svg" width="320" />
-<br />
-<figcaption>必要な道具を順番にそろえていきます</figcaption>
-</figure>
-<h2 id="vscodeclaude">このガイドの進め方（VSCode＋Claude）<a class="headerlink" href="#vscodeclaude" title="Permanent link">&para;</a></h2>
-<p>このあとの章では、GitHubの操作を次の <strong>2通り</strong> で並べて説明します。好きな方を選んでください。</p>
-<ul>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.5 15.5c0 .37-.1.7-.28 1-.34-.59-.98-1-1.72-1s-1.38.41-1.72 1c-.17-.3-.28-.63-.28-1 0-1.1.9-2 2-2s2 .9 2 2M23 15v3c0 .55-.45 1-1 1h-1v1c0 1.11-.89 2-2 2H5a2 2 0 0 1-2-2v-1H2c-.55 0-1-.45-1-1v-3c0-.55.45-1 1-1h1c0-3.87 3.13-7 7-7h1V5.73c-.6-.34-1-.99-1-1.73 0-1.1.9-2 2-2s2 .9 2 2c0 .74-.4 1.39-1 1.73V7h1c3.87 0 7 3.13 7 7h1c.55 0 1 .45 1 1m-2 1h-2v-2c0-2.76-2.24-5-5-5h-4c-2.76 0-5 2.24-5 5v2H3v1h2v3h14v-3h2zm-5.5-2.5c-1.1 0-2 .9-2 2 0 .37.11.7.28 1 .34-.59.98-1 1.72-1s1.38.41 1.72 1c.18-.3.28-.63.28-1a2 2 0 0 0-2-2"/></svg></span> <strong>Claudeに頼む</strong> … VSCodeの中で、Claudeに日本語でお願いする（コマンド不要）</li>
-<li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m11.5 11 6.38 5.37-.88.18-.64.12c-.63.13-.99.83-.71 1.4l.27.58 1.36 2.94-1.42.66-1.36-2.93-.26-.58a.985.985 0 0 0-1.52-.36l-.51.4-.71.57zm-.74-2.31a.76.76 0 0 0-.76.76V20.9c0 .42.34.76.76.76.19 0 .35-.06.48-.16l1.91-1.55 1.66 3.62c.13.27.4.43.69.43.11 0 .22 0 .33-.08l2.76-1.28c.38-.18.56-.64.36-1.01L17.28 18l2.41-.45a.9.9 0 0 0 .43-.26c.27-.32.23-.79-.12-1.08l-8.74-7.35-.01.01a.76.76 0 0 0-.49-.18M15 10V8h5v2zm-1.17-5.24 2.83-2.83 1.41 1.41-2.83 2.83zM10 0h2v5h-2zM3.93 14.66l2.83-2.83 1.41 1.41-2.83 2.83zm0-11.32 1.41-1.41 2.83 2.83-1.41 1.41zM7 10H2V8h5z"/></svg></span> <strong>自分で操作</strong> … 画面のボタンを自分でクリックする</li>
-</ul>
-<pre class="mermaid"><code>flowchart LR
-    A[1.VSCode&lt;br/&gt;編集ソフト] --&gt; B[2.Git&lt;br/&gt;履歴の仕組み]
-    B --&gt; C[3.GitHubに接続&lt;br/&gt;サインイン]
-    C --&gt; D[4.Claude&lt;br/&gt;お願いできる相棒]
-    D --&gt; E([準備完了 🎉])</code></pre>
-<div class="admonition tip">
-<p class="admonition-title">全部入れるのが大変なときは</p>
-<p>まずは <strong>VSCode</strong> と <strong>Git</strong> だけでも大丈夫です。Claudeは後からでも追加できます。</p>
-</div>
-<hr />
-<h2 id="1-vscode">1. VSCode（ブイエスコード）を入れる<a class="headerlink" href="#1-vscode" title="Permanent link">&para;</a></h2>
-<p>VSCodeは、<strong>文章やファイルを編集できる無料のソフト</strong>です。GitHubとの相性がよく、初心者にもおすすめです。</p>
-<p>公式サイト <a href="https://code.visualstudio.com">https://code.visualstudio.com</a> を開き、自分のPCに合うボタンから入れます。</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> Mac</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ol>
-<li>公式サイトの <strong>Download for Windows</strong> を押す</li>
-<li>ダウンロードされたファイル（<code>...User Setup.exe</code>）を開く</li>
-<li>画面の案内に従って「次へ」で進める（途中の同意・追加タスクはそのままでOK）</li>
-<li>完了したらVSCodeを起動する</li>
-</ol>
-</div>
-<div class="tabbed-block">
-<ol>
-<li>公式サイトの <strong>Download for Mac</strong> を押す</li>
-<li>ダウンロードされた <code>.zip</code> を開くと、<code>Visual Studio Code</code> アプリが出てくる</li>
-<li>それを <strong>アプリケーション</strong> フォルダにドラッグして移動する</li>
-<li>アプリケーションから起動する</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="admonition quote">
-<p class="admonition-title">📷 画面キャプチャ枠（あとで差し込み）</p>
-<p>VSCode公式サイトのダウンロードボタンの画面を入れます。
-<code>![VSCodeのダウンロード画面](images/setup-01-vscode.png){ width="700" }</code></p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">日本語表示にする</p>
-<p>初回起動時に「日本語に変更しますか？」と出たら <strong>「インストールして再起動」</strong> を押すと、メニューが日本語になります。</p>
-</div>
-<hr />
-<h2 id="2-git">2. Git（ギット）を入れる<a class="headerlink" href="#2-git" title="Permanent link">&para;</a></h2>
-<p>Gitは、<strong>変更の履歴を管理する“仕組み”そのもの</strong>です（→ <a href="../glossary/">用語集</a>）。GitHubを使うPCに必要です。</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows</label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> Mac</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<ol>
-<li><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> を開く</li>
-<li>自動でダウンロードが始まる（始まらなければ案内のリンクを押す）</li>
-<li>ファイルを開き、画面の案内は <strong>基本そのまま「Next」</strong> で進めてOK</li>
-<li>「Install」→「Finish」で完了</li>
-</ol>
-</div>
-<div class="tabbed-block">
-<p>Macは最初からGitが入っていることが多いです。まず確認します。</p>
-<ol>
-<li><strong>VSCodeを開く</strong> → メニューの「ターミナル」→「新しいターミナル」</li>
-<li>
-<p>次の1行を貼り付けて Enter</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>--version
-</code></pre></div>
-</li>
-<li>
-<p><code>git version 2.xx.x</code> のように出れば、すでに入っています</p>
-</li>
-<li>入っていない場合は、案内ウィンドウが出るので <strong>「インストール」</strong> を押す</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">確認だけなら覚えなくてOK</p>
-<p><code>git --version</code> は「入っているか確かめる」ためのものです。意味を覚える必要はありません。</p>
-</div>
-<hr />
-<h2 id="3-vscodegithub">3. VSCodeからGitHubにサインインする<a class="headerlink" href="#3-vscodegithub" title="Permanent link">&para;</a></h2>
-<p>VSCodeと、前章で作った <strong>GitHubアカウント</strong> をつなぎます。これで「自分のGitHub」とやりとりできます。</p>
-<pre class="mermaid"><code>flowchart LR
-    A[VSCode左下の&lt;br/&gt;アカウントアイコン] --&gt; B["Sign in with GitHub&lt;br/&gt;を選ぶ"]
-    B --&gt; C[ブラウザでGitHubに&lt;br/&gt;ログイン＆許可]
-    C --&gt; D([接続完了 ✅])</code></pre>
-<div class="admonition quote">
-<p class="admonition-title">📷 画面キャプチャ枠（あとで差し込み）</p>
-<p>VSCode左下のアカウントアイコンからサインインする画面を入れます。
-<code>![GitHubへのサインイン](images/setup-02-signin.png){ width="700" }</code></p>
-</div>
-<hr />
-<h2 id="4-claude">4. Claude（クロード）を入れる<a class="headerlink" href="#4-claude" title="Permanent link">&para;</a></h2>
 <figure>
   <img alt="相棒となるツールを使うイメージ" src="../images/illustrations/design-tools.svg" width="320" />
 <br />
@@ -1674,13 +1445,24 @@
 </figure>
 <p>Claudeは、<strong>VSCodeの中で日本語でお願いできるAIの相棒</strong>です。
 「新しいリポジトリを作って」「この変更を記録して」のように頼むと、操作を代わりに進めてくれます。</p>
-<p>導入のおおまかな流れ：</p>
+<pre class="mermaid"><code>flowchart LR
+    A[VSCode] --&gt; B[拡張機能で&lt;br/&gt;Claudeを検索]
+    B --&gt; C[インストール]
+    C --&gt; D[Claudeアカウントで&lt;br/&gt;サインイン]
+    D --&gt; E([日本語で頼める 🎉])</code></pre>
+<hr />
+<h2 id="1-vscode">1. VSCode拡張として入れる（おすすめ）<a class="headerlink" href="#1-vscode" title="Permanent link">&para;</a></h2>
 <ol>
 <li>VSCodeの左側の <strong>拡張機能（四角が4つのアイコン <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 13.5c0 1.76-1.3 3.22-3 3.46V20a2 2 0 0 1-2 2h-3.8v-.3a2.7 2.7 0 0 0-2.7-2.7c-1.5 0-2.7 1.21-2.7 2.7v.3H4a2 2 0 0 1-2-2v-3.8h.3C3.79 16.2 5 15 5 13.5s-1.21-2.7-2.7-2.7H2V7a2 2 0 0 1 2-2h3.04c.24-1.7 1.7-3 3.46-3s3.22 1.3 3.46 3H17a2 2 0 0 1 2 2v3.04c1.7.24 3 1.7 3 3.46M17 15h1.5a1.5 1.5 0 0 0 1.5-1.5 1.5 1.5 0 0 0-1.5-1.5H17V7h-5V5.5A1.5 1.5 0 0 0 10.5 4 1.5 1.5 0 0 0 9 5.5V7H4v2.12c1.76.68 3 2.38 3 4.38s-1.25 3.7-3 4.38V20h2.12a4.7 4.7 0 0 1 4.38-3c2 0 3.7 1.25 4.38 3H17z"/></svg></span>）</strong> を開く</li>
 <li>検索欄に <strong><code>Claude</code></strong> と入力する</li>
 <li>表示された拡張機能を <strong>インストール（Install）</strong> する</li>
 <li>画面の案内に従って、Claudeのアカウントでサインインする</li>
 </ol>
+<div class="admonition quote">
+<p class="admonition-title">📷 画面キャプチャ枠（あとで差し込み）</p>
+<p>拡張機能で「Claude」を検索した画面を入れます。
+<code>![Claude拡張のインストール](images/setup-03-claude.png){ width="700" }</code></p>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">Node.js などの事前準備は不要です</p>
 <p>Claude Code の VSCode拡張には、必要なもの（CLI）が <strong>内蔵</strong> されています。
@@ -1692,15 +1474,31 @@
 <p>Claudeの導入方法は更新されることがあります。最新の手順は、社内の案内または公式ドキュメントを確認してください。
 （会社で配布・利用ルールがある場合は、それに従ってください。）</p>
 </div>
-<div class="admonition quote">
-<p class="admonition-title">📷 画面キャプチャ枠（あとで差し込み）</p>
-<p>拡張機能で「Claude」を検索した画面を入れます。
-<code>![Claude拡張のインストール](images/setup-03-claude.png){ width="700" }</code></p>
+<hr />
+<h2 id="2">2. 使ってみる（お願いの仕方）<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>入力欄に、<strong>日本語でそのまま</strong> 書けばOKです。命令口調でなくてもかまいません。</p>
+<div class="highlight"><pre><span></span><code>このフォルダの中身を教えて。
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>README.md を作って、このプロジェクトの説明を書いて。
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">上手に頼むコツ</p>
+<ul>
+<li><strong>何を・どうしたいか</strong> を1〜2文で書く（例：「この変更を記録して、GitHubに送って」）</li>
+<li>分からないときは <strong>「これ何？」と聞く</strong>。用語の説明もしてくれます</li>
+<li>もっと詳しいコツは → <a href="../appendix/">付録：Claudeの頼み方とMarkdown</a></li>
+</ul>
 </div>
-<h3 id="cli"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 19V7H4v12zm0-16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-7 14v-2h5v2zm-3.42-4L5.57 9H8.4l3.3 3.3c.39.39.39 1.03 0 1.42L8.42 17H5.59z"/></svg></span> ターミナルでも使う：CLI版（任意）<a class="headerlink" href="#cli" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">貼り付けてはいけない情報</p>
+<p>パスワード・APIキー・お客様の個人情報などは、<strong>入力欄に貼らない</strong> でください。
+詳しくは → <a href="../ai-safety/">AIと安全に付き合う</a></p>
+</div>
+<hr />
+<h2 id="3-cli">3. ターミナルでも使う：CLI版（任意）<a class="headerlink" href="#3-cli" title="Permanent link">&para;</a></h2>
 <p>VSCodeの拡張だけで十分な人は、ここは <strong>飛ばしてOK</strong> です。
 ターミナルから <code>claude</code> を直接使いたい人向けに、CLI版も入れられます（<strong>Node.js は不要</strong>）。</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> Mac / Linux</label><label for="__tabbed_3_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows（PowerShell）</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> Mac / Linux</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows（PowerShell）</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://claude.ai/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
@@ -1718,72 +1516,16 @@
 <p>すでに Node.js（18以上）がある人は <code>npm install -g @anthropic-ai/claude-code</code> でも入れられます。どれか1つの方法でOKです。</p>
 </div>
 <hr />
-<h2 id="github-cli-gh"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 19V7H4v12zm0-16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-7 14v-2h5v2zm-3.42-4L5.57 9H8.4l3.3 3.3c.39.39.39 1.03 0 1.42L8.42 17H5.59z"/></svg></span> GitHub CLI（gh）を入れる（GitHub操作におすすめ）<a class="headerlink" href="#github-cli-gh" title="Permanent link">&para;</a></h2>
-<p>GitHub CLI（<code>gh</code>）は、GitHubの操作（<strong>リポジトリ作成・プルリク作成</strong> など）を行うための道具です。</p>
-<div class="admonition info">
-<p class="admonition-title">実は「Claudeに頼む」ときも使われます</p>
-<p>Claudeにリポジトリ作成やプルリク作成を頼むと、Claudeは <strong>内部でこの <code>gh</code> コマンドを使います</strong>。
-そのため、Claudeで進める人も <code>gh</code> を入れておくとスムーズです（未導入だと、これらの操作でつまずくことがあります）。</p>
-<ul>
-<li><strong>コミット・プッシュ</strong> だけなら <code>git</code>（前の手順で導入済み）でOK ― <code>gh</code> は不要です</li>
-<li><strong>リポジトリ作成・プルリク作成</strong> など“GitHub側”の操作で <code>gh</code> が活躍します</li>
-<li><strong>GitHubサイト（ブラウザ）だけ</strong> で操作するなら、<code>gh</code> がなくても大丈夫です</li>
-</ul>
-</div>
-<h3 id="claude">いちばん簡単：Claudeに頼む<a class="headerlink" href="#claude" title="Permanent link">&para;</a></h3>
-<p>VSCodeのClaudeに、こう頼むだけでOKです。</p>
-<div class="highlight"><pre><span></span><code>GitHub CLI（gh）を入れて、GitHubにログインできるようにして。
-</code></pre></div>
-<p>Claudeが、お使いのPCに合った方法でインストールから初期設定（ログイン）まで進めてくれます。
-（Homebrewなどの準備が必要な場合も、まとめてやってくれます。）</p>
-<h3 id="_1">自分で入れる場合<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows</label><label for="__tabbed_4_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> Mac</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>PowerShell などで次を実行します。</p>
-<div class="highlight"><pre><span></span><code><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">GitHub</span><span class="p">.</span><span class="nb">cli</span>
-</code></pre></div>
-<p>うまくいかないときは <a href="https://cli.github.com">cli.github.com</a> のインストーラーからでも入れられます。</p>
-</div>
-<div class="tabbed-block">
-<p><a href="https://brew.sh">Homebrew</a> が入っていれば、次の1行で入ります。</p>
-<div class="highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>gh
-</code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Homebrew が入っていないとき</p>
-<p>Homebrew は、Macでソフトを入れるための定番ツールです。
-未導入なら <a href="https://brew.sh">brew.sh</a> の手順で入れるか、<strong>Claudeに「Homebrewを入れて」と頼む</strong> のが簡単です。
-（<code>gh</code> の導入ごとClaudeに頼めば、必要な準備もまとめてやってくれます。）</p>
-</div>
-</div>
-</div>
-</div>
-<p>入れたら、GitHubと接続（ログイン）します。</p>
-<div class="highlight"><pre><span></span><code>gh<span class="w"> </span>auth<span class="w"> </span>login
-</code></pre></div>
-<p>画面の質問に <strong>↑↓ と Enter</strong> で答えていきます（迷ったら <code>GitHub.com</code> → <code>HTTPS</code> → ブラウザで認証、の順で選べばOK）。</p>
-<div class="admonition tip">
-<p class="admonition-title">入っているか確認</p>
-<p><code>gh --version</code> でバージョンが表示されれば準備完了です。
-入れ方に迷ったら、Claudeに「<code>gh</code> を使えるようにして」と頼むこともできます。</p>
-</div>
-<hr />
-<h2 id="_2">この章のまとめ<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>flowchart LR
-    A[VSCode] --&gt; B[Git]
-    B --&gt; C[GitHubに接続]
-    C --&gt; D[Claude]
-    D --&gt; E([準備完了 🎉])</code></pre>
+<h2 id="_1">この章のまとめ<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> VSCodeを入れた</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Gitを入れた</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> VSCodeからGitHubにサインインした</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Claudeを入れた（後回しでもOK）</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Claude拡張を入れた</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> サインインして、日本語で話しかけられた</li>
 </ul>
 <div class="admonition success">
 <p class="admonition-title">次のステップ</p>
-<p>道具がそろいました。さっそく、Claudeに頼みながら <strong>自分のファイル置き場（リポジトリ）</strong> を作ってみましょう。</p>
-<p>👉 <a href="../first-steps/">最初の一歩（リポジトリを作る）</a></p>
+<p>相棒がそろいました。最後に、変更の履歴を扱う <strong>Git</strong> と、ネット上の置き場 <strong>GitHub</strong> をつなぎます。
+ここからは、迷ったら <strong>Claudeに頼めば</strong> 進められます。</p>
+<p>👉 <a href="../setup-git/">GitとGitHubをつなぐ</a></p>
 </div>
 
 
@@ -1820,7 +1562,7 @@
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
           
-          <a href="../account-setup/" class="md-footer__link md-footer__link--prev" aria-label="前: アカウント作成と初期設定">
+          <a href="../setup-vscode/" class="md-footer__link md-footer__link--prev" aria-label="前: VSCodeを入れる">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1830,20 +1572,20 @@
                 前
               </span>
               <div class="md-ellipsis">
-                アカウント作成と初期設定
+                VSCodeを入れる
               </div>
             </div>
           </a>
         
         
           
-          <a href="../first-steps/" class="md-footer__link md-footer__link--next" aria-label="次: 最初の一歩（リポジトリを作る）">
+          <a href="../setup-git/" class="md-footer__link md-footer__link--next" aria-label="次: GitとGitHubをつなぐ">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 次
               </span>
               <div class="md-ellipsis">
-                最初の一歩（リポジトリを作る）
+                GitとGitHubをつなぐ
               </div>
             </div>
             <div class="md-footer__button md-icon">

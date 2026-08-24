@@ -12,13 +12,13 @@
         <meta name="author" content="はじめてのGitHub 入門ガイド">
       
       
-        <link rel="canonical" href="https://sup-mkajiwara.github.io/github-guide/collaboration/">
+        <link rel="canonical" href="https://sup-mkajiwara.github.io/github-guide/setup-git/">
       
       
-        <link rel="prev" href="../commit-push/">
+        <link rel="prev" href="../setup-claude/">
       
       
-        <link rel="next" href="../practice/">
+        <link rel="next" href="../first-steps/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>みんなで使う（プルリク・マージ） - はじめてのGitHub 入門ガイド</title>
+        <title>GitとGitHubをつなぐ - はじめてのGitHub 入門ガイド</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#gitgithub" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              みんなで使う（プルリク・マージ）
+              GitとGitHubをつなぐ
             
           </span>
         </div>
@@ -485,18 +485,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -517,7 +519,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -588,10 +590,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../setup-git/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitとGitHubをつなぐ
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -607,6 +636,159 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        全体の流れ
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. GitHubアカウントを作る
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. GitHubアカウントを作る">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        メール認証をする
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. プロフィールの初期設定
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-factor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 安全のための設定（2段階認証）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Git（ギット）を入れる
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-vscodegithub" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. VSCodeからGitHubにサインインする
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-cli-gh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. GitHub CLI（gh）を入れる（GitHub操作におすすめ）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. GitHub CLI（gh）を入れる（GitHub操作におすすめ）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        いちばん簡単：Claudeに頼む
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自分で入れる場合
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        この章のまとめ
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -623,20 +805,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -657,7 +837,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -728,37 +908,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    みんなで使う（プルリク・マージ）
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../collaboration/" class="md-nav__link">
         
   
   
@@ -774,70 +927,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. ブランチを作る
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. 変更してプルリクエストを出す
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. レビューしてマージする
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        この章のまとめ
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1372,13 +1461,41 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. ブランチを作る
+        全体の流れ
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. GitHubアカウントを作る
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. GitHubアカウントを作る">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        メール認証をする
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1386,7 +1503,7 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. 変更してプルリクエストを出す
+        2. プロフィールの初期設定
       
     </span>
   </a>
@@ -1394,10 +1511,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#two-factor" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. レビューしてマージする
+        3. 安全のための設定（2段階認証）
       
     </span>
   </a>
@@ -1405,7 +1522,68 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#4-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Git（ギット）を入れる
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-vscodegithub" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. VSCodeからGitHubにサインインする
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-cli-gh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. GitHub CLI（gh）を入れる（GitHub操作におすすめ）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. GitHub CLI（gh）を入れる（GitHub操作におすすめ）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        いちばん簡単：Claudeに頼む
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自分で入れる場合
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         この章のまとめ
@@ -1432,174 +1610,276 @@
 
 
 
-<h1 id="_1">みんなで使う（プルリク・マージ）<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="gitgithub">GitとGitHubをつなぐ<a class="headerlink" href="#gitgithub" title="Permanent link">&para;</a></h1>
 <div class="admonition info">
 <p class="admonition-title">この章のゴール</p>
-<p>複数人で安全に共同作業する流れ（<strong>ブランチ → プルリクエスト → マージ</strong>）が分かること。</p>
+<p><strong>GitHubアカウント</strong> を作り、PCに <strong>Git</strong> を入れて、
+VSCodeから「自分のGitHub」とやりとりできる状態になること。
+あわせて、安全に使うための初期設定（2段階認証）まで済ませます。</p>
 </div>
 <figure>
-  <img alt="変更をレビューするイメージ" src="../images/illustrations/code-review.svg" width="320" />
+  <img alt="PCとネット上の置き場がつながるイメージ" src="../images/illustrations/cloud-sync.svg" width="320" />
 <br />
-<figcaption>いきなり本体を変えず、「相談してから反映」が基本</figcaption>
+<figcaption>手元のPCと、ネット上の置き場をつなぎます</figcaption>
 </figure>
-<p>全体の流れはこうです。</p>
+<h2 id="_1">全体の流れ<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>所要時間はだいたい <strong>15〜20分</strong> です。</p>
 <pre class="mermaid"><code>flowchart LR
-    A[本体&lt;br/&gt;main] --&gt; B[1.ブランチ&lt;br/&gt;作業用の枝 🌿]
-    B --&gt; C[2.プルリク&lt;br/&gt;確認のお願い 🙋]
-    C --&gt; D[3.レビュー＆&lt;br/&gt;マージ 🔀]
-    D --&gt; A</code></pre>
+    A([スタート]) --&gt; B[1. GitHubアカウントを作る]
+    B --&gt; C[2. プロフィールの初期設定]
+    C --&gt; D[3. 2段階認証]
+    D --&gt; E[4. Gitを入れる]
+    E --&gt; F[5. VSCodeからサインイン]
+    F --&gt; G([準備完了 🎉])</code></pre>
 <div class="admonition tip">
-<p class="admonition-title">おすすめの進め方</p>
-<p>いきなり本体を変えず、「<strong>ブランチで作業 → プルリクで相談 → マージ</strong>」の流れを習慣にすると安全です。</p>
-</div>
-<hr />
-<h2 id="1">1. ブランチを作る<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<p><strong>ブランチ</strong>は「作業用の分かれ道」です（→ <a href="../glossary/">用語集</a>）。
-本体（みんなが使う版＝<code>main</code>）に影響を与えずに、別の場所で安心して作業できます。</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.5 15.5c0 .37-.1.7-.28 1-.34-.59-.98-1-1.72-1s-1.38.41-1.72 1c-.17-.3-.28-.63-.28-1 0-1.1.9-2 2-2s2 .9 2 2M23 15v3c0 .55-.45 1-1 1h-1v1c0 1.11-.89 2-2 2H5a2 2 0 0 1-2-2v-1H2c-.55 0-1-.45-1-1v-3c0-.55.45-1 1-1h1c0-3.87 3.13-7 7-7h1V5.73c-.6-.34-1-.99-1-1.73 0-1.1.9-2 2-2s2 .9 2 2c0 .74-.4 1.39-1 1.73V7h1c3.87 0 7 3.13 7 7h1c.55 0 1 .45 1 1m-2 1h-2v-2c0-2.76-2.24-5-5-5h-4c-2.76 0-5 2.24-5 5v2H3v1h2v3h14v-3h2zm-5.5-2.5c-1.1 0-2 .9-2 2 0 .37.11.7.28 1 .34-.59.98-1 1.72-1s1.38.41 1.72 1c.18-.3.28-.63.28-1a2 2 0 0 0-2-2"/></svg></span> Claudeに頼む</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 16.47V7.39l-6 4.54M2.22 9.19a.86.86 0 0 1-.02-1.15l1.2-1.11c.2-.18.69-.26 1.05 0l3.42 2.61 7.93-7.25c.32-.32.87-.45 1.5-.12l4 1.91c.36.21.7.54.7 1.15v13.5c0 .4-.29.83-.6 1l-4.4 2.1c-.32.13-.92.01-1.13-.2l-8.02-7.3-3.4 2.6c-.38.26-.85.19-1.05 0l-1.2-1.1c-.32-.33-.28-.87.05-1.2l3-2.7"/></svg></span> VSCodeで操作</label><label for="__tabbed_1_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 19V7H4v12zm0-16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-7 14v-2h5v2zm-3.42-4L5.57 9H8.4l3.3 3.3c.39.39.39 1.03 0 1.42L8.42 17H5.59z"/></svg></span> CLIで操作</label><label for="__tabbed_1_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> GitHubサイトで操作</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>「fix-typo」という名前のブランチを作って、そっちに切り替えて。
-</code></pre></div>
-<p>どんなブランチ名がいいかも相談できます（例：<code>add-photos</code>、<code>update-readme</code>）。</p>
-</div>
-<div class="tabbed-block">
-<ol>
-<li>VSCode左下の <strong>ブランチ名（例：<code>main</code>）</strong> をクリック</li>
-<li><strong>＋ 新しいブランチの作成</strong> を選ぶ</li>
-<li>ブランチ名を入れる（例：<code>fix-typo</code>）</li>
-<li>そのブランチに切り替わる</li>
-</ol>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="c1"># fix-typo ブランチを作って、そのブランチに切り替える</span>
-git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>fix-typo
-</code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>いまどのブランチにいるかは <code>git branch</code> で確認できます（<code>*</code> が付いているのが現在地）。</p>
-</div>
-</div>
-<div class="tabbed-block">
-<ol>
-<li>リポジトリ画面の左上、<strong>ブランチ切り替えのボタン</strong>（<code>main ▾</code>）を押す</li>
-<li>入力欄に新しい名前（例：<code>fix-typo</code>）を入れる</li>
-<li><strong>Create branch: fix-typo</strong> を押す</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">ブランチ名のつけ方</p>
-<p>「何をするか」が分かる名前にします。例：<code>fix-typo</code>（誤字直し）、<code>add-photos</code>（写真追加）。</p>
-</div>
-<hr />
-<h2 id="2">2. 変更してプルリクエストを出す<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<p>ブランチで変更・コミット・プッシュしたら（→ <a href="../commit-push/">コミットの章</a>）、
-<strong>プルリクエスト（PR）</strong> で「この変更を本体に入れていいですか？」と相談します。</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.5 15.5c0 .37-.1.7-.28 1-.34-.59-.98-1-1.72-1s-1.38.41-1.72 1c-.17-.3-.28-.63-.28-1 0-1.1.9-2 2-2s2 .9 2 2M23 15v3c0 .55-.45 1-1 1h-1v1c0 1.11-.89 2-2 2H5a2 2 0 0 1-2-2v-1H2c-.55 0-1-.45-1-1v-3c0-.55.45-1 1-1h1c0-3.87 3.13-7 7-7h1V5.73c-.6-.34-1-.99-1-1.73 0-1.1.9-2 2-2s2 .9 2 2c0 .74-.4 1.39-1 1.73V7h1c3.87 0 7 3.13 7 7h1c.55 0 1 .45 1 1m-2 1h-2v-2c0-2.76-2.24-5-5-5h-4c-2.76 0-5 2.24-5 5v2H3v1h2v3h14v-3h2zm-5.5-2.5c-1.1 0-2 .9-2 2 0 .37.11.7.28 1 .34-.59.98-1 1.72-1s1.38.41 1.72 1c.18-.3.28-.63.28-1a2 2 0 0 0-2-2"/></svg></span> Claudeに頼む</label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 16.47V7.39l-6 4.54M2.22 9.19a.86.86 0 0 1-.02-1.15l1.2-1.11c.2-.18.69-.26 1.05 0l3.42 2.61 7.93-7.25c.32-.32.87-.45 1.5-.12l4 1.91c.36.21.7.54.7 1.15v13.5c0 .4-.29.83-.6 1l-4.4 2.1c-.32.13-.92.01-1.13-.2l-8.02-7.3-3.4 2.6c-.38.26-.85.19-1.05 0l-1.2-1.1c-.32-.33-.28-.87.05-1.2l3-2.7"/></svg></span> VSCodeで操作</label><label for="__tabbed_2_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 19V7H4v12zm0-16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-7 14v-2h5v2zm-3.42-4L5.57 9H8.4l3.3 3.3c.39.39.39 1.03 0 1.42L8.42 17H5.59z"/></svg></span> CLIで操作</label><label for="__tabbed_2_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> GitHubサイトで操作</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>いまのブランチの変更で、プルリクエストを作って。
-タイトルと説明も、変更内容に合わせて書いて。
-</code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Claudeも内部で <code>gh</code> を使います</p>
-<p>プルリク作成には <code>gh</code>（GitHub CLI）が使われます。未導入なら Claudeに <strong>「<code>gh</code> を入れて」</strong> と頼むか、<a href="../setup-git/#github-cli-gh">GitとGitHubをつなぐ（GitHub CLI）</a> を参照してください。</p>
-</div>
-</div>
-<div class="tabbed-block">
-<p>VSCodeの拡張機能 <strong>「GitHub Pull Requests」</strong> を入れると、VSCodeからPRを作れます。</p>
-<ol>
-<li>拡張機能で <strong><code>GitHub Pull Requests</code></strong> を検索してインストール</li>
-<li>左側に増える <strong>PRアイコン</strong> から <strong>Create Pull Request</strong> を押す</li>
-<li>タイトル・説明を書いて <strong>Create</strong> を押す</li>
-</ol>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="c1"># いまのブランチの内容でプルリクを作成（タイトル等は対話で入力／--fillで自動）</span>
-gh<span class="w"> </span>pr<span class="w"> </span>create<span class="w"> </span>--fill
-</code></pre></div>
-<div class="admonition note">
-<p class="admonition-title"><code>gh</code>（GitHub CLI）の準備</p>
-<p>このタブには <strong>GitHub CLI（<code>gh</code>）</strong> が必要です（入れ方は <a href="../setup-git/#github-cli-gh">GitとGitHubをつなぐ（GitHub CLI）</a>）。
-作成後、URLが表示されるのでブラウザで確認できます。</p>
-</div>
-</div>
-<div class="tabbed-block">
-<ol>
-<li>リポジトリの画面を開くと <strong>Compare &amp; pull request</strong> ボタンが出る → 押す</li>
-<li><strong>タイトル</strong> と <strong>説明</strong>（何を・なぜ変えたか）を書く</li>
-<li><strong>Create pull request</strong> を押す</li>
-<li>確認してほしい人がいれば <strong>Reviewers</strong> で指定する</li>
-</ol>
-<div class="admonition quote">
-<p class="admonition-title">📷 画面キャプチャ枠（あとで差し込み）</p>
-<p>プルリクエスト作成画面を入れます。
-<code>![プルリクの作成](images/collab-01-pr.png){ width="700" }</code></p>
-</div>
-</div>
-</div>
-</div>
-<hr />
-<h2 id="3">3. レビューしてマージする<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
-<p>ほかの人に見てもらい（<strong>レビュー</strong>）、OKなら本体に合流（<strong>マージ</strong>）します。</p>
-<figure>
-  <img alt="合意してマージするイメージ" src="../images/illustrations/agree.svg" width="300" />
-<br />
-<figcaption>「これでOK」となったら本体に取り込む</figcaption>
-</figure>
-<p>基本の流れ（レビューする側 → マージする側）：</p>
-<ol>
-<li><strong>レビュー</strong>：変更点（Files changed）を確認し、気づきはコメント、問題なければ <strong>Approve（承認）</strong></li>
-<li><strong>マージ</strong>：承認されたら本体に合流させ、使い終わったブランチは片付ける</li>
-</ol>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.5 15.5c0 .37-.1.7-.28 1-.34-.59-.98-1-1.72-1s-1.38.41-1.72 1c-.17-.3-.28-.63-.28-1 0-1.1.9-2 2-2s2 .9 2 2M23 15v3c0 .55-.45 1-1 1h-1v1c0 1.11-.89 2-2 2H5a2 2 0 0 1-2-2v-1H2c-.55 0-1-.45-1-1v-3c0-.55.45-1 1-1h1c0-3.87 3.13-7 7-7h1V5.73c-.6-.34-1-.99-1-1.73 0-1.1.9-2 2-2s2 .9 2 2c0 .74-.4 1.39-1 1.73V7h1c3.87 0 7 3.13 7 7h1c.55 0 1 .45 1 1m-2 1h-2v-2c0-2.76-2.24-5-5-5h-4c-2.76 0-5 2.24-5 5v2H3v1h2v3h14v-3h2zm-5.5-2.5c-1.1 0-2 .9-2 2 0 .37.11.7.28 1 .34-.59.98-1 1.72-1s1.38.41 1.72 1c.18-.3.28-.63.28-1a2 2 0 0 0-2-2"/></svg></span> Claudeに頼む</label><label for="__tabbed_3_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 16.47V7.39l-6 4.54M2.22 9.19a.86.86 0 0 1-.02-1.15l1.2-1.11c.2-.18.69-.26 1.05 0l3.42 2.61 7.93-7.25c.32-.32.87-.45 1.5-.12l4 1.91c.36.21.7.54.7 1.15v13.5c0 .4-.29.83-.6 1l-4.4 2.1c-.32.13-.92.01-1.13-.2l-8.02-7.3-3.4 2.6c-.38.26-.85.19-1.05 0l-1.2-1.1c-.32-.33-.28-.87.05-1.2l3-2.7"/></svg></span> VSCodeで操作</label><label for="__tabbed_3_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 19V7H4v12zm0-16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-7 14v-2h5v2zm-3.42-4L5.57 9H8.4l3.3 3.3c.39.39.39 1.03 0 1.42L8.42 17H5.59z"/></svg></span> CLIで操作</label><label for="__tabbed_3_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> GitHubサイトで操作</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>このプルリクをレビューして、問題がなければマージして。
-使い終わったブランチも消して。
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<p>「GitHub Pull Requests」拡張のPR一覧から対象を開き、
-画面内の <strong>Approve（承認）</strong> や <strong>Merge Pull Request</strong> のボタンで操作できます。</p>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>gh<span class="w"> </span>pr<span class="w"> </span>checks<span class="w">      </span><span class="c1"># 確認（任意）</span>
-gh<span class="w"> </span>pr<span class="w"> </span>merge<span class="w">       </span><span class="c1"># マージ（やり方を対話で選択。--merge 等でも指定可）</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<ol>
-<li>プルリクの <strong>Files changed</strong> で変更点を確認</li>
-<li>問題なければ <strong>Review changes → Approve</strong></li>
-<li><strong>Merge pull request → Confirm merge</strong> で本体に反映</li>
-<li>使い終わったブランチは <strong>Delete branch</strong> で片付ける</li>
-</ol>
-</div>
-</div>
+<p class="admonition-title">むずかしいところは Claude に頼める</p>
+<p>前のページで <strong>Claude</strong> を入れたので、4以降の作業は
+「Gitを入れて」「GitHubにログインできるようにして」と頼めば代わりに進めてくれます。</p>
 </div>
 <div class="admonition warning">
-<p class="admonition-title">マージの前に</p>
-<p>マージは「本体に反映する」操作です。<strong>内容を確認してから</strong> 行いましょう。
-不安なときは、詳しい人やClaudeに「この変更、マージして大丈夫？」と聞くと安心です。</p>
+<p class="admonition-title">はじめに：会社のルールを確認</p>
+<p>会社で使う場合は、<strong>会社のメールアドレス</strong>で登録するか、社内ルールに従ってください。
+すでに「このメールアドレスで作って」と案内されている場合は、それに従いましょう。</p>
 </div>
 <hr />
-<h2 id="_2">この章のまとめ<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="1-github">1. GitHubアカウントを作る<a class="headerlink" href="#1-github" title="Permanent link">&para;</a></h2>
+<p>ブラウザ（Chrome や Edge）で <a href="https://github.com">https://github.com</a> を開きます。</p>
+<pre class="mermaid"><code>flowchart TD
+    A[github.com を開く] --&gt; B["右上の Sign up を押す"]
+    B --&gt; C[メールアドレスを入力]
+    C --&gt; D[パスワードを入力]
+    D --&gt; E[ユーザー名を入力]
+    E --&gt; F["案内に従ってクイズ／確認に答える"]
+    F --&gt; G[Create account を押す]</code></pre>
+<p>操作の対応表です。英語のボタンが多いので、迷ったらここを見てください。</p>
+<table>
+<thead>
+<tr>
+<th>画面の表示（英語）</th>
+<th>意味・やること</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sign up</strong></td>
+<td>新規登録（アカウントを作る）</td>
+</tr>
+<tr>
+<td><strong>Enter your email</strong></td>
+<td>メールアドレスを入力</td>
+</tr>
+<tr>
+<td><strong>Create a password</strong></td>
+<td>パスワードを作る</td>
+</tr>
+<tr>
+<td><strong>Enter a username</strong></td>
+<td>ユーザー名（半角英数字）を決める</td>
+</tr>
+<tr>
+<td><strong>Continue / Create account</strong></td>
+<td>次へ進む／登録を確定する</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">📷 画面キャプチャ枠（あとで差し込み）</p>
+<p>ここに <strong>Sign up ボタンの場所</strong> がわかる画面を入れます。
+画像が用意できたら、この枠を次の1行に置き換えてください：
+<code>![Sign upボタンの場所](images/account-01-signup.png){ width="700" }</code></p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">個人情報の取り扱いに注意</p>
+<ul>
+<li>登録に使うメールアドレスやパスワードは、<strong>この資料や社内チャットに貼り付けないでください</strong>。</li>
+<li>パスワードは他サービスと<strong>使い回さない</strong>でください。</li>
+</ul>
+</div>
+<details class="tip">
+<summary>ユーザー名の決め方（クリックで開く）</summary>
+<ul>
+<li>半角の英数字とハイフンが使えます（例：<code>taro-example</code>）。</li>
+<li>後から変更もできますが、URLが変わるため<strong>最初に決めておく</strong>のがおすすめです。</li>
+<li>実名でなくてもかまいませんが、社内で使うなら<strong>誰か分かる名前</strong>にしておくと便利です。</li>
+</ul>
+</details>
+<h3 id="_2">メール認証をする<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>登録したメールアドレスに、GitHubから確認コード（数字）が届きます。</p>
 <pre class="mermaid"><code>flowchart LR
-    A[🌿 ブランチで作業] --&gt; B[🙋 プルリクで相談]
-    B --&gt; C[👀 レビュー]
-    C --&gt; D[🔀 マージで反映]</code></pre>
+    A[メールを開く] --&gt; B[確認コードを確認&lt;br/&gt;例：8桁の数字]
+    B --&gt; C[GitHubの画面に入力]
+    C --&gt; D([認証完了 ✅])</code></pre>
+<div class="admonition note">
+<p class="admonition-title">コードが届かないときは</p>
+<ul>
+<li><strong>迷惑メールフォルダ</strong>を確認してください。</li>
+<li>数分待っても届かなければ、画面の <strong>Resend（再送）</strong> を押します。</li>
+<li>メールアドレスの打ち間違いがないか、もう一度確認しましょう。</li>
+</ul>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">📷 画面キャプチャ枠（あとで差し込み）</p>
+<p>確認コードの入力画面を入れる場所です。
+<code>![確認コードの入力画面](images/account-02-verify.png){ width="700" }</code></p>
+</div>
+<hr />
+<h2 id="2">2. プロフィールの初期設定<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>ログインできたら、最低限のプロフィールを整えます。<strong>あとからでも変更できる</strong>ので、まずは軽くでOKです。</p>
+<ul>
+<li><strong>表示名（Name）</strong>：社内で誰か分かる名前にしておくと、共同作業のときに便利です。</li>
+<li><strong>アイコン（Profile picture）</strong>：顔写真でなくてもOK。設定すると見分けがつきやすくなります。</li>
+</ul>
+<p>設定場所への行き方：</p>
+<pre class="mermaid"><code>flowchart LR
+    A[右上のアイコンを押す] --&gt; B["Settings（設定）を押す"]
+    B --&gt; C["Public profile で&lt;br/&gt;名前・アイコンを編集"]
+    C --&gt; D["Update profile で保存"]</code></pre>
+<div class="admonition quote">
+<p class="admonition-title">📷 画面キャプチャ枠（あとで差し込み）</p>
+<p>Settings（設定）の場所がわかる画面を入れます。
+<code>![設定メニューの場所](images/account-03-settings.png){ width="700" }</code></p>
+</div>
+<hr />
+<h2 id="two-factor">3. 安全のための設定（2段階認証）<a class="headerlink" href="#two-factor" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">ここは必ず設定しましょう</p>
+<p>GitHubは大切なファイルを置く場所です。<strong>2段階認証（2FA）</strong> を設定すると、
+万一パスワードが漏れても、本人以外はログインできなくなります。</p>
+</div>
+<p>2段階認証は、ログイン時に「パスワード」＋「スマホアプリの数字」の<strong>2つ</strong>を使う仕組みです。</p>
+<pre class="mermaid"><code>flowchart LR
+    P[パスワード] --&gt; L{ログイン}
+    S[スマホの認証アプリ&lt;br/&gt;の6桁コード] --&gt; L
+    L --&gt; OK([本人だけ入れる 🔒])</code></pre>
+<p>設定の入り口：<strong>Settings → Password and authentication → Two-factor authentication</strong> から進めます。
+画面の案内に従って、スマホの認証アプリ（例：Google Authenticator など）と連携します。</p>
+<div class="admonition danger">
+<p class="admonition-title">リカバリーコードは必ず保管</p>
+<p>2段階認証を設定すると、<strong>リカバリーコード</strong>（緊急用の合言葉）が表示されます。
+スマホを失くしたときの命綱なので、<strong>安全な場所に保管</strong>してください。社内チャット等には貼らないこと。</p>
+</div>
+<hr />
+<h2 id="4-git">4. Git（ギット）を入れる<a class="headerlink" href="#4-git" title="Permanent link">&para;</a></h2>
+<p>Gitは、<strong>変更の履歴を管理する“仕組み”そのもの</strong>です（→ <a href="../glossary/">用語集</a>）。GitHubを使うPCに必要です。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.5 15.5c0 .37-.1.7-.28 1-.34-.59-.98-1-1.72-1s-1.38.41-1.72 1c-.17-.3-.28-.63-.28-1 0-1.1.9-2 2-2s2 .9 2 2M23 15v3c0 .55-.45 1-1 1h-1v1c0 1.11-.89 2-2 2H5a2 2 0 0 1-2-2v-1H2c-.55 0-1-.45-1-1v-3c0-.55.45-1 1-1h1c0-3.87 3.13-7 7-7h1V5.73c-.6-.34-1-.99-1-1.73 0-1.1.9-2 2-2s2 .9 2 2c0 .74-.4 1.39-1 1.73V7h1c3.87 0 7 3.13 7 7h1c.55 0 1 .45 1 1m-2 1h-2v-2c0-2.76-2.24-5-5-5h-4c-2.76 0-5 2.24-5 5v2H3v1h2v3h14v-3h2zm-5.5-2.5c-1.1 0-2 .9-2 2 0 .37.11.7.28 1 .34-.59.98-1 1.72-1s1.38.41 1.72 1c.18-.3.28-.63.28-1a2 2 0 0 0-2-2"/></svg></span> Claudeに頼む</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows（自分で）</label><label for="__tabbed_1_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> Mac（自分で）</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>VSCodeのClaudeに、こう頼むだけでOKです。</p>
+<div class="highlight"><pre><span></span><code>このPCにGitが入っているか確認して、入っていなければ入れて。
+</code></pre></div>
+<p>お使いのPCに合った方法で、確認から導入まで進めてくれます。</p>
+</div>
+<div class="tabbed-block">
+<ol>
+<li><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> を開く</li>
+<li>自動でダウンロードが始まる（始まらなければ案内のリンクを押す）</li>
+<li>ファイルを開き、画面の案内は <strong>基本そのまま「Next」</strong> で進めてOK</li>
+<li>「Install」→「Finish」で完了</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<p>Macは最初からGitが入っていることが多いです。まず確認します。</p>
+<ol>
+<li><strong>VSCodeを開く</strong> → メニューの「ターミナル」→「新しいターミナル」</li>
+<li>
+<p>次の1行を貼り付けて Enter</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>--version
+</code></pre></div>
+</li>
+<li>
+<p><code>git version 2.xx.x</code> のように出れば、すでに入っています</p>
+</li>
+<li>入っていない場合は、案内ウィンドウが出るので <strong>「インストール」</strong> を押す</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">確認だけなら覚えなくてOK</p>
+<p><code>git --version</code> は「入っているか確かめる」ためのものです。意味を覚える必要はありません。</p>
+</div>
+<hr />
+<h2 id="5-vscodegithub">5. VSCodeからGitHubにサインインする<a class="headerlink" href="#5-vscodegithub" title="Permanent link">&para;</a></h2>
+<p>VSCodeと、この章で作った <strong>GitHubアカウント</strong> をつなぎます。これで「自分のGitHub」とやりとりできます。</p>
+<pre class="mermaid"><code>flowchart LR
+    A[VSCode左下の&lt;br/&gt;アカウントアイコン] --&gt; B["Sign in with GitHub&lt;br/&gt;を選ぶ"]
+    B --&gt; C[ブラウザでGitHubに&lt;br/&gt;ログイン＆許可]
+    C --&gt; D([接続完了 ✅])</code></pre>
+<div class="admonition quote">
+<p class="admonition-title">📷 画面キャプチャ枠（あとで差し込み）</p>
+<p>VSCode左下のアカウントアイコンからサインインする画面を入れます。
+<code>![GitHubへのサインイン](images/setup-02-signin.png){ width="700" }</code></p>
+</div>
+<hr />
+<h2 id="github-cli-gh">6. GitHub CLI（gh）を入れる（GitHub操作におすすめ）<a class="headerlink" href="#github-cli-gh" title="Permanent link">&para;</a></h2>
+<p>GitHub CLI（<code>gh</code>）は、GitHubの操作（<strong>リポジトリ作成・プルリク作成</strong> など）を行うための道具です。</p>
+<div class="admonition info">
+<p class="admonition-title">実は「Claudeに頼む」ときも使われます</p>
+<p>Claudeにリポジトリ作成やプルリク作成を頼むと、Claudeは <strong>内部でこの <code>gh</code> コマンドを使います</strong>。
+そのため、Claudeで進める人も <code>gh</code> を入れておくとスムーズです（未導入だと、これらの操作でつまずくことがあります）。</p>
+<ul>
+<li><strong>コミット・プッシュ</strong> だけなら <code>git</code>（前の手順で導入済み）でOK ― <code>gh</code> は不要です</li>
+<li><strong>リポジトリ作成・プルリク作成</strong> など“GitHub側”の操作で <code>gh</code> が活躍します</li>
+<li><strong>GitHubサイト（ブラウザ）だけ</strong> で操作するなら、<code>gh</code> がなくても大丈夫です</li>
+</ul>
+</div>
+<h3 id="claude">いちばん簡単：Claudeに頼む<a class="headerlink" href="#claude" title="Permanent link">&para;</a></h3>
+<p>VSCodeのClaudeに、こう頼むだけでOKです。</p>
+<div class="highlight"><pre><span></span><code>GitHub CLI（gh）を入れて、GitHubにログインできるようにして。
+</code></pre></div>
+<p>Claudeが、お使いのPCに合った方法でインストールから初期設定（ログイン）まで進めてくれます。
+（Homebrewなどの準備が必要な場合も、まとめてやってくれます。）</p>
+<h3 id="_3">自分で入れる場合<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows</label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> Mac</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>PowerShell などで次を実行します。</p>
+<div class="highlight"><pre><span></span><code><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span> <span class="n">GitHub</span><span class="p">.</span><span class="nb">cli</span>
+</code></pre></div>
+<p>うまくいかないときは <a href="https://cli.github.com">cli.github.com</a> のインストーラーからでも入れられます。</p>
+</div>
+<div class="tabbed-block">
+<p><a href="https://brew.sh">Homebrew</a> が入っていれば、次の1行で入ります。</p>
+<div class="highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>gh
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Homebrew が入っていないとき</p>
+<p>Homebrew は、Macでソフトを入れるための定番ツールです。
+未導入なら <a href="https://brew.sh">brew.sh</a> の手順で入れるか、<strong>Claudeに「Homebrewを入れて」と頼む</strong> のが簡単です。
+（<code>gh</code> の導入ごとClaudeに頼めば、必要な準備もまとめてやってくれます。）</p>
+</div>
+</div>
+</div>
+</div>
+<p>入れたら、GitHubと接続（ログイン）します。</p>
+<div class="highlight"><pre><span></span><code>gh<span class="w"> </span>auth<span class="w"> </span>login
+</code></pre></div>
+<p>画面の質問に <strong>↑↓ と Enter</strong> で答えていきます（迷ったら <code>GitHub.com</code> → <code>HTTPS</code> → ブラウザで認証、の順で選べばOK）。</p>
+<div class="admonition tip">
+<p class="admonition-title">入っているか確認</p>
+<p><code>gh --version</code> でバージョンが表示されれば準備完了です。
+入れ方に迷ったら、Claudeに「<code>gh</code> を使えるようにして」と頼むこともできます。</p>
+</div>
+<hr />
+<h2 id="_4">この章のまとめ<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A[VSCode] --&gt; B[Claude]
+    B --&gt; C[GitHubアカウント]
+    C --&gt; D[Git]
+    D --&gt; E[サインイン]
+    E --&gt; F([準備完了 🎉])</code></pre>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ブランチで安全に作業できる</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> プルリクで相談できる</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> レビューしてマージできる</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> GitHubにログインできる</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> プロフィールを設定した</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 2段階認証で安全にした</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> PCにGitを入れた</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> VSCodeからGitHubにサインインした</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> GitHub CLI（<code>gh</code>）を入れた</li>
 </ul>
 <div class="admonition success">
 <p class="admonition-title">次のステップ</p>
-<p>共同作業の流れがつかめました。次は、ここまでの流れを <strong>通しで練習</strong> してみましょう。</p>
-<p>👉 <a href="../practice/">練習：通しでやってみる</a></p>
+<p>道具がすべてそろいました。さっそく、Claudeに頼みながら <strong>自分のファイル置き場（リポジトリ）</strong> を作ってみましょう。</p>
+<p>👉 <a href="../first-steps/">最初の一歩（リポジトリを作る）</a></p>
 </div>
 
 
@@ -1636,7 +1916,7 @@ gh<span class="w"> </span>pr<span class="w"> </span>merge<span class="w">       
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
           
-          <a href="../commit-push/" class="md-footer__link md-footer__link--prev" aria-label="前: 変更を記録する（コミット）">
+          <a href="../setup-claude/" class="md-footer__link md-footer__link--prev" aria-label="前: Claudeを入れる">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1646,20 +1926,20 @@ gh<span class="w"> </span>pr<span class="w"> </span>merge<span class="w">       
                 前
               </span>
               <div class="md-ellipsis">
-                変更を記録する（コミット）
+                Claudeを入れる
               </div>
             </div>
           </a>
         
         
           
-          <a href="../practice/" class="md-footer__link md-footer__link--next" aria-label="次: 練習：通しでやってみる">
+          <a href="../first-steps/" class="md-footer__link md-footer__link--next" aria-label="次: 最初の一歩（リポジトリを作る）">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 次
               </span>
               <div class="md-ellipsis">
-                練習：通しでやってみる
+                最初の一歩（リポジトリを作る）
               </div>
             </div>
             <div class="md-footer__button md-icon">
