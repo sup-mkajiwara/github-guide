@@ -1444,7 +1444,8 @@
 <figcaption>「○○して」とお願いすると、操作を手伝ってくれます</figcaption>
 </figure>
 <p>Claudeは、<strong>VSCodeの中で日本語でお願いできるAIの相棒</strong>です。
-「新しいリポジトリを作って」「この変更を記録して」のように頼むと、操作を代わりに進めてくれます。</p>
+「議事録のテンプレートを作って」「この文章を分かりやすく直して」のように頼むと、
+ファイルを作ったり書き換えたりする作業を、代わりに進めてくれます。</p>
 <pre class="mermaid"><code>flowchart LR
     A[VSCode] --&gt; B[拡張機能で&lt;br/&gt;Claudeを検索]
     B --&gt; C[インストール]
@@ -1479,12 +1480,12 @@
 <p>入力欄に、<strong>日本語でそのまま</strong> 書けばOKです。命令口調でなくてもかまいません。</p>
 <div class="highlight"><pre><span></span><code>このフォルダの中身を教えて。
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>README.md を作って、このプロジェクトの説明を書いて。
+<div class="highlight"><pre><span></span><code>meeting-memo.md を作って、打ち合わせメモのテンプレートを書いて。
 </code></pre></div>
 <div class="admonition tip">
 <p class="admonition-title">上手に頼むコツ</p>
 <ul>
-<li><strong>何を・どうしたいか</strong> を1〜2文で書く（例：「この変更を記録して、GitHubに送って」）</li>
+<li><strong>何を・どうしたいか</strong> を1〜2文で書く（例：「この文章を、社外向けのていねいな言い方に直して」）</li>
 <li>分からないときは <strong>「これ何？」と聞く</strong>。用語の説明もしてくれます</li>
 <li>もっと詳しいコツは → <a href="../appendix/">付録：Claudeの頼み方とMarkdown</a></li>
 </ul>
