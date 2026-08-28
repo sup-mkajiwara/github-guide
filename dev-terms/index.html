@@ -1,0 +1,3686 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="非エンジニア向け・GitHubをやさしく学ぶ入門ガイド">
+      
+      
+        <meta name="author" content="はじめてのGitHub 入門ガイド">
+      
+      
+        <link rel="canonical" href="https://sup-mkajiwara.github.io/github-guide/dev-terms/">
+      
+      
+        <link rel="prev" href="../it-basics/">
+      
+      
+        <link rel="next" href="../claude-terms/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>開発の技術用語集 - はじめてのGitHub 入門ガイド</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href=".." title="はじめてのGitHub 入門ガイド" class="md-header__button md-logo" aria-label="はじめてのGitHub 入門ガイド" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            はじめてのGitHub 入門ガイド
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              開発の技術用語集
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="ダークモードに切り替え"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="ダークモードに切り替え" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="ライトモードに切り替え"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="ライトモードに切り替え" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="はじめてのGitHub 入門ガイド" class="md-nav__button md-logo" aria-label="はじめてのGitHub 入門ガイド" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
+
+    </a>
+    はじめてのGitHub 入門ガイド
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    はじめに
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    用語集
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    用語集
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHubの用語集（まずはここから）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../it-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基本のIT用語集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    開発の技術用語集
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    開発の技術用語集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. まず押さえる（開発の土台）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0. まず押さえる（開発の土台）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oss-open-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OSS ／ オープンソース（Open Source）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        パッケージ ／ ライブラリ（Package / Library）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        パッケージマネージャー（Package Manager）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        フレームワーク（Framework）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. プログラムが動くまで
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. プログラムが動くまで">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ソースコード ／ プログラミング言語
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ランタイム（Runtime／実行環境）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ビルド（Build）／ コンパイル ／ トランスパイル ／ バンドル
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        コンポーネント ／ 状態（State）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#route-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ルート ／ ルーティング（Route / Routing）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. やりとりする（通信）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. やりとりする（通信）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        フロントエンド ／ バックエンド
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        サーバー ／ クライアント（Server / Client）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localhost-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        localhost（ローカルホスト） ／ ポート（Port）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-https" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HTTP ／ HTTPS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HTTPリクエスト ／ レスポンス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HTTPメソッド ／ ステータスコード
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-rest-api-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API ／ エンドポイント ／ REST API ／ SDK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON（ジェイソン）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webhook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Webhook（ウェブフック）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sse-websocket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ストリーミング ／ SSE ／ WebSocket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cors-origin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CORS（コルス） ／ オリジン（Origin）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. データを保管する
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. データを保管する">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#db-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        データベース（DB） ／ SQL（エス・キュー・エル）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        テーブル ／ 行 ／ 列 ／ スキーマ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        クエリ ／ CRUD（クラッド）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主キー ／ 外部キー ／ リレーション
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        マイグレーション（Migration）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#orm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ORM（オー・アール・エム）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        オブジェクトストレージ
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 安全に使う（認証・認可）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 安全に使う（認証・認可）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        認証（Authentication） ／ 認可（Authorization）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cookie-jwt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        セッション ／ Cookie ／ トークン ／ JWT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oauth-sso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OAuth（オーオース） ／ SSO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rbac-rls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        権限 ／ ロール ／ RBAC ／ RLS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        環境変数（Environment Variable）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        シークレット ／ APIキー ／ トークン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        入力検証（バリデーション）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Web脆弱性（ぜいじゃくせい）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 動かし方のくふう
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 動かし方のくふう">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        同期 ／ 非同期 ／ バックグラウンドジョブ ／ キュー
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cron" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cron（クロン） ／ 定期実行
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 品質を守る
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 品質を守る">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        バグ ／ エラー ／ デバッグ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ログ（Log）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        スタックトレース
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e2e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        単体テスト ／ 結合テスト ／ E2Eテスト
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        リグレッション ／ テストカバレッジ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        静的解析（せいてきかいせき）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ci-cd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CI ／ CD
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 公開と運用
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 公開と運用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preview-staging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        環境（開発 / Preview / Staging / 本番）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ホスティング ／ サーバーレス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dns-https" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ドメイン ／ DNS ／ HTTPS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デプロイ ／ リリース ／ ロールバック
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        コンテナ ／ Docker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        キャッシュ ／ CDN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        モニタリング ／ Observability（可観測性）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../claude-terms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claudeの用語集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../design-vocab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    デザインの用語集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ui-vocab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UI/UXの用語集
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AIで開発するとは
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    準備する
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    準備する
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup-vscode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VSCodeを入れる
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup-claude/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claudeを入れる
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup-git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitとGitHubをつなぐ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHubの基本
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    GitHubの基本
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../first-steps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    最初の一歩（リポジトリを作る）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commit-push/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    変更を記録する（コミット）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../collaboration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    みんなで使う（プルリク・マージ）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    つくってみる
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    つくってみる
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    練習：通しでやってみる
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AIで作ってみる（ハンズオン）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    エラーとの付き合い方
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    安全に使う
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    安全に使う
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    情報を守る（GitHub）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai-safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AIと安全に付き合う
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    社内ルール
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    社内ルール
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech-stack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    推奨技術スタック
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../repo-naming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    リポジトリの名前の付け方（命名規則）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    もっと深く
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    もっと深く
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    もっと使う（上級編）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    困ったときのQ&A
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../appendix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    付録：Claudeの頼み方とMarkdown
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. まず押さえる（開発の土台）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0. まず押さえる（開発の土台）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oss-open-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OSS ／ オープンソース（Open Source）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        パッケージ ／ ライブラリ（Package / Library）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#package-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        パッケージマネージャー（Package Manager）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        フレームワーク（Framework）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. プログラムが動くまで
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. プログラムが動くまで">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ソースコード ／ プログラミング言語
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ランタイム（Runtime／実行環境）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ビルド（Build）／ コンパイル ／ トランスパイル ／ バンドル
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        コンポーネント ／ 状態（State）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#route-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ルート ／ ルーティング（Route / Routing）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. やりとりする（通信）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. やりとりする（通信）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        フロントエンド ／ バックエンド
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        サーバー ／ クライアント（Server / Client）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localhost-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        localhost（ローカルホスト） ／ ポート（Port）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-https" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HTTP ／ HTTPS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HTTPリクエスト ／ レスポンス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HTTPメソッド ／ ステータスコード
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-rest-api-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API ／ エンドポイント ／ REST API ／ SDK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JSON（ジェイソン）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webhook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Webhook（ウェブフック）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sse-websocket" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ストリーミング ／ SSE ／ WebSocket
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cors-origin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CORS（コルス） ／ オリジン（Origin）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. データを保管する
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. データを保管する">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#db-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        データベース（DB） ／ SQL（エス・キュー・エル）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        テーブル ／ 行 ／ 列 ／ スキーマ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crud" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        クエリ ／ CRUD（クラッド）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        主キー ／ 外部キー ／ リレーション
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        マイグレーション（Migration）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#orm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ORM（オー・アール・エム）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        オブジェクトストレージ
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 安全に使う（認証・認可）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 安全に使う（認証・認可）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication-authorization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        認証（Authentication） ／ 認可（Authorization）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cookie-jwt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        セッション ／ Cookie ／ トークン ／ JWT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oauth-sso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OAuth（オーオース） ／ SSO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rbac-rls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        権限 ／ ロール ／ RBAC ／ RLS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        環境変数（Environment Variable）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        シークレット ／ APIキー ／ トークン
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        入力検証（バリデーション）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Web脆弱性（ぜいじゃくせい）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 動かし方のくふう
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 動かし方のくふう">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        同期 ／ 非同期 ／ バックグラウンドジョブ ／ キュー
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cron" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cron（クロン） ／ 定期実行
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 品質を守る
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. 品質を守る">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        バグ ／ エラー ／ デバッグ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ログ（Log）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        スタックトレース
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e2e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        単体テスト ／ 結合テスト ／ E2Eテスト
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        リグレッション ／ テストカバレッジ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        静的解析（せいてきかいせき）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ci-cd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CI ／ CD
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 公開と運用
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. 公開と運用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preview-staging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        環境（開発 / Preview / Staging / 本番）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ホスティング ／ サーバーレス
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dns-https" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ドメイン ／ DNS ／ HTTPS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        デプロイ ／ リリース ／ ロールバック
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        コンテナ ／ Docker
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        キャッシュ ／ CDN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        モニタリング ／ Observability（可観測性）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">開発の技術用語集<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">このページのねらい</p>
+<p>Claudeと一緒に開発を進めていると、<strong>説明の中に出てくる言葉が分からなくて止まる</strong> ことがあります。
+ここでは「AIの説明を読むとき」「AIに指示するとき」に出てくる言葉を、<strong>1行の意味＋たとえ</strong> で並べました。</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">覚えなくて大丈夫。引くためのページです</p>
+<p>上から順に読む必要はありません。<strong>知らない言葉が出てきたときに戻ってきて引く</strong> のがおすすめです。
+ページ内検索（Windows: <code>Ctrl + F</code> ／ Mac: <code>⌘ + F</code>）か、右上の 🔍 が便利です。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">ほかの用語集との使い分け</p>
+<ul>
+<li>パソコン全般の言葉（ファイル・パス・ターミナル・コマンドなど）→ <a href="../it-basics/">基本のIT用語集</a></li>
+<li>Git/GitHub特有の言葉（コミット・ブランチ・プルリクなど）→ <a href="../glossary/">GitHubの用語集</a></li>
+<li>AI・Claudeの言葉（プロンプト・トークン・MCPなど）→ <a href="../claude-terms/">Claudeの用語集</a></li>
+</ul>
+</div>
+<hr />
+<h2 id="0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 8h-3V6c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v10h20V10c0-1.1-.9-2-2-2M9 6h6v2H9zm11 12H4v-3h2v1h2v-1h8v1h2v-1h2zm-2-5v-1h-2v1H8v-1H6v1H4v-3h16v3z"/></svg></span> 0. まず押さえる（開発の土台）<a class="headerlink" href="#0" title="Permanent link">&para;</a></h2>
+<h3 id="oss-open-source"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 22h-.19a.46.46 0 0 1-.26-.27l-2.22-5.8c-.09-.24.03-.51.26-.61.71-.26 1.28-.82 1.58-1.49.64-1.43 0-3.1-1.43-3.74s-3.1 0-3.74 1.41c-.3.71-.32 1.5-.05 2.19.3.74.89 1.31 1.64 1.59.24.09.37.36.28.61L9 21.69c-.04.12-.13.22-.25.27-.12.04-.25.04-.36 0C3.24 19.97.67 14.18 2.66 9.03s7.78-7.72 12.93-5.73c2.47.96 4.46 2.85 5.54 5.27a9.9 9.9 0 0 1 .2 7.65c-1.01 2.66-3.1 4.78-5.75 5.78zM12 3.59c-4.97-.13-9.1 3.8-9.23 8.77a9.01 9.01 0 0 0 5.55 8.54l1.89-4.9c-1.83-1-2.52-3.28-1.53-5.11a3.784 3.784 0 0 1 5.11-1.53 3.775 3.775 0 0 1 0 6.64l1.89 4.93a9.11 9.11 0 0 0 4.76-5c1.84-4.62-.4-9.85-5.02-11.7A9.1 9.1 0 0 0 12 3.59"/></svg></span> OSS ／ オープンソース（Open Source）<a class="headerlink" href="#oss-open-source" title="Permanent link">&para;</a></h3>
+<p><strong>プログラムの中身（ソースコード）が公開され、誰でも見たり使ったりできるもの</strong> です。多くの開発ツールがこれ。</p>
+<blockquote>
+<p>🌍 たとえ：レシピを無料公開して、みんなで改良していくイメージ。</p>
+</blockquote>
+<h3 id="package-library"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15l-1.89 1.07L16 8.61l1.96-1.11zM6.04 7.5 12 10.85l1.96-1.1-5.88-3.4zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"/></svg></span> パッケージ ／ ライブラリ（Package / Library）<a class="headerlink" href="#package-library" title="Permanent link">&para;</a></h3>
+<p><strong>他の人が作った「便利な部品（プログラム）」</strong> です。これを組み合わせて開発を速くします。</p>
+<blockquote>
+<p>🧱 たとえ：自作せず使える「既製のブロック」。</p>
+</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">AIは気軽に部品を増やす</p>
+<p>AIは機能を実現するために、<strong>新しいライブラリを次々に足しがち</strong> です。中には更新が止まったものや、
+<strong>実在しない架空の名前</strong> を提案してくることもあります。見慣れない部品名が出てきたら、
+「<strong>それは何のために必要で、今もメンテナンスされていますか？</strong>」と聞き返しましょう。</p>
+</div>
+<h3 id="package-manager"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 10.96a.985.985 0 0 1-.37-1.37L3.13 7c.11-.2.28-.34.47-.42l7.83-4.4c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.19.1.35.26.44.46l1.45 2.52c.28.48.11 1.09-.36 1.36l-1 .58v4.96c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-5.54c-.3.17-.68.18-1 0m10-6.81v6.7l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-3.22l-5 2.9c-.33.18-.7.17-1 .01v3.69zm-5.15-2.55 6.28-3.63-.58-1.01-6.28 3.63z"/></svg></span> パッケージマネージャー（Package Manager）<a class="headerlink" href="#package-manager" title="Permanent link">&para;</a></h3>
+<p><strong>パッケージ（部品）の入手・更新・管理をしてくれる道具</strong> です。例：<code>npm</code>・<code>pnpm</code>。</p>
+<blockquote>
+<p>📦 たとえ：必要な部品を取り寄せて在庫管理してくれる「資材係」。</p>
+</blockquote>
+<h3 id="framework"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 5v14h20V5zm18 7h-4V7h4zm-6-2h-4V7h4zm-4 2h4v5h-4zM4 7h4v10H4zm12 10v-3h4v3z"/></svg></span> フレームワーク（Framework）<a class="headerlink" href="#framework" title="Permanent link">&para;</a></h3>
+<p><strong>アプリ作りの「土台・骨組み」</strong> です。よくある仕組みが用意され、ゼロから作らずに済みます。</p>
+<blockquote>
+<p>🏗️ たとえ：ライブラリが「後から買い足す家具」、フレームワークが「間取りや配管が決まった賃貸物件」。1つのアプリに1つ選びます。</p>
+</blockquote>
+<hr />
+<h2 id="1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.11.89 2 2 2h12c1.11 0 2-.89 2-2V8zm4 18H6V4h7v5h5zm-8.46-4.35 2.09 2.09L10.35 19 7 15.65l3.35-3.35 1.28 1.26zm7.46 0L13.65 19l-1.27-1.26 2.09-2.09-2.09-2.09 1.27-1.26z"/></svg></span> 1. プログラムが動くまで<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A[ソースコード&lt;br/&gt;人が書いた文字] --&gt; B[ビルド&lt;br/&gt;組み立て]
+    B --&gt; C[ランタイム&lt;br/&gt;実際に動かす場所]
+    C --&gt; D([アプリが動く 🎉])</code></pre>
+<h3 id="_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.6 16.6 4.6-4.6-4.6-4.6L16 6l6 6-6 6zm-5.2 0L4.8 12l4.6-4.6L8 6l-6 6 6 6z"/></svg></span> ソースコード ／ プログラミング言語<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p><strong>人が読み書きできる形で書かれた「命令文」</strong> がソースコードです。その書き方のルールが <strong>プログラミング言語</strong>（Python・TypeScript など）。</p>
+<blockquote>
+<p>📜 たとえ：ソースコードが「楽譜」、プログラミング言語は「楽譜の記法」。</p>
+</blockquote>
+<h3 id="runtime"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V5h14m0-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-9 5v8l5-4z"/></svg></span> ランタイム（Runtime／実行環境）<a class="headerlink" href="#runtime" title="Permanent link">&para;</a></h3>
+<p><strong>書かれたコードを実際に動かす側のソフト</strong> です。ブラウザや Node.js などが代表例。</p>
+<blockquote>
+<p>🎻 たとえ：楽譜（コード）を実際に鳴らす「演奏者」。演奏者が違えば、同じ楽譜でも鳴らないことがある。</p>
+</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">「自分のPCでは動いたのに」の正体</p>
+<p>手元では動くのにサーバーで動かない、というトラブルは、コードのミスではなく
+<strong>ランタイムのバージョン違い</strong> が原因のことがよくあります。</p>
+</div>
+<h3 id="build"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m13.78 15.3 6 6 2.11-2.16-6-6zm3.72-5.2c-.39 0-.81-.05-1.14-.19L4.97 21.25l-2.11-2.11 7.41-7.4L8.5 9.96l-.72.7-1.45-1.41v2.86l-.7.7-3.52-3.56.7-.7h2.81l-1.4-1.41 3.56-3.56a2.976 2.976 0 0 1 4.22 0L9.89 5.74l1.41 1.4-.71.71 1.79 1.78 1.82-1.88c-.14-.33-.2-.75-.2-1.12a3.49 3.49 0 0 1 3.5-3.52c.59 0 1.11.14 1.58.42L16.41 6.2l1.5 1.5 2.67-2.67c.28.47.42.97.42 1.6 0 1.92-1.55 3.47-3.5 3.47"/></svg></span> ビルド（Build）／ コンパイル ／ トランスパイル ／ バンドル<a class="headerlink" href="#build" title="Permanent link">&para;</a></h3>
+<p><strong>ビルド</strong> は、書いたコードを <strong>実際に動く形にまとめ上げる</strong> 工程全体のこと。その中身は主に3つです。</p>
+<table>
+<thead>
+<tr>
+<th>工程</th>
+<th>やっていること</th>
+<th>たとえ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>トランスパイル</strong></td>
+<td>書き方Aの言語 → 書き方Bの言語に翻訳</td>
+<td>関西弁を標準語に言い換える</td>
+</tr>
+<tr>
+<td><strong>コンパイル</strong></td>
+<td>人が読む言語 → 機械が読む形に変換</td>
+<td>日本語をモールス信号に変える</td>
+</tr>
+<tr>
+<td><strong>バンドル</strong></td>
+<td>バラバラのファイルを1つにまとめる</td>
+<td>細かい荷物を1箱に詰める</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🏭 たとえ：部品を組み立てて製品にする「工場のライン」。</p>
+</blockquote>
+<div class="admonition danger">
+<p class="admonition-title">公開前に必ず1回ビルドを通す</p>
+<p>開発中の画面（<code>npm run dev</code>）は、多少の不整合を <strong>見逃したまま表示</strong> します。
+一方、公開用のビルドは1か所でもおかしいと <strong>止まります</strong>。
+「手元で動いたから公開して」とAIに頼む前に、<strong>手元で一度ビルドを通してもらう</strong> のが失敗を防ぐコツです。</p>
+</div>
+<h3 id="state"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 11h8V3H3m2 2h4v4H5m8 12h8v-8h-8m2 2h4v4h-4M3 21h8v-8H3m2 2h4v4H5m8-16v8h8V3m-2 6h-4V5h4Z"/></svg></span> コンポーネント ／ 状態（State）<a class="headerlink" href="#state" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>コンポーネント</strong> … 画面を組み立てる <strong>部品</strong>（ヘッダー、ボタン、商品カードなど）。</li>
+<li><strong>状態（State）</strong> … その部品が持っている <strong>今の状況のデータ</strong>（カートの中身、メニューが開いているか）。</li>
+</ul>
+<blockquote>
+<p>🧩 たとえ：コンポーネントが「部品」、状態が「そのスイッチが今オンかオフか」。</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">画面のバグの多くはここ</p>
+<p>「ボタンを押したのに表示が変わらない」の原因は、たいてい <strong>状態の更新の仕方</strong> です。
+AIに直してもらうときは「<strong>どこを操作したら、どの表示が変わらなかったか</strong>」を日本語で伝えると、特定が速くなります。</p>
+</div>
+<h3 id="route-routing"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 12H3.5L6 9.5 3.5 7H11V3l1-1 1 1v4h5l2.5 2.5L18 12h-5v8a2 2 0 0 1 2 2H9a2 2 0 0 1 2-2z"/></svg></span> ルート ／ ルーティング（Route / Routing）<a class="headerlink" href="#route-routing" title="Permanent link">&para;</a></h3>
+<p><strong>「このURLを開いたら、この画面を出す」という対応づけ</strong> です。</p>
+<blockquote>
+<p>🚦 たとえ：住所（URL）を見て、どの部屋に案内するかを決める「交通整理」。</p>
+</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">ビルドでは気づけないミス</p>
+<p>URLの綴りミスは <strong>エラーにならず</strong>、公開してから「404（ページが見つかりません）」で発覚します。
+新しい画面を追加したら、<strong>URLの一覧を書き出してもらって、実際に開いて確認</strong> しましょう。</p>
+</div>
+<hr />
+<h2 id="2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21 9-4-4v3h-7v2h7v3M7 11l-4 4 4 4v-3h7v-2H7z"/></svg></span> 2. やりとりする（通信）<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    B[ブラウザ&lt;br/&gt;クライアント] --&gt;|リクエスト&lt;br/&gt;お願い| S[サーバー]
+    S --&gt;|レスポンス&lt;br/&gt;返事| B</code></pre>
+<h3 id="_3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m0 6v8h4V8z"/></svg></span> フロントエンド ／ バックエンド<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>フロントエンド</strong> … 画面・見た目など、利用者が触れる部分。</li>
+<li><strong>バックエンド</strong> … 裏側の処理・データ管理など、見えない部分。</li>
+</ul>
+<blockquote>
+<p>🎭 たとえ：お店の「客席・接客（フロント）」と「厨房・倉庫（バック）」。</p>
+</blockquote>
+<div class="admonition danger">
+<p class="admonition-title">画面側に秘密を置いてはいけない</p>
+<p>フロントエンド（ブラウザ側）に渡したものは、<strong>利用者が中身を覗ける</strong> と考えてください。
+データベースのパスワードや秘密のカギを画面側のコードに書くと、そのまま見られてしまいます。
+変更を頼むときは「<strong>この処理はどちら側で動きますか？</strong>」と確認する習慣をつけると安全です。</p>
+</div>
+<h3 id="server-client"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 19h1a1 1 0 0 1 1 1h7v2h-7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-2H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-7zM4 3h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1m5 4h1V5H9zm0 8h1v-2H9zM5 5v2h2V5zm0 8v2h2v-2z"/></svg></span> サーバー ／ クライアント（Server / Client）<a class="headerlink" href="#server-client" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>サーバー</strong> … サービスやデータを <strong>提供する側</strong>（ネットの向こう側）。</li>
+<li><strong>クライアント</strong> … それを <strong>受け取って使う側</strong>（手元のPC・ブラウザ）。</li>
+</ul>
+<blockquote>
+<p>🍽️ たとえ：料理を出す「お店（サーバー）」と、注文して食べる「お客（クライアント）」。</p>
+</blockquote>
+<h3 id="localhost-port"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 1c-1.11 0-2 .89-2 2v4c0 1.11.89 2 2 2H1v2h12V9h-3c1.11 0 2-.89 2-2V3c0-1.11-.89-2-2-2zm0 2h6v4H4zM3 13v7h7v-2H5v-5zm11 0c-1.11 0-2 .89-2 2v4c0 1.11.89 2 2 2h-3v2h12v-2h-3c1.11 0 2-.89 2-2v-4c0-1.11-.89-2-2-2zm0 2h6v4h-6z"/></svg></span> localhost（ローカルホスト） ／ ポート（Port）<a class="headerlink" href="#localhost-port" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>localhost</strong> … <strong>自分のPC自身</strong> を指す住所。作りかけのアプリを手元で確認するときに使う。</li>
+<li><strong>ポート</strong> … 1台のPCの中の <strong>出入口の番号</strong>。例：<code>localhost:3000</code>。</li>
+</ul>
+<blockquote>
+<p>🚪 たとえ：自分の家（localhost）の、どのドアか（ポート番号）。</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">よく出るエラー：ポートが使用中</p>
+<p>アプリを終了せずにもう一度起動すると「<strong>Port already in use</strong>」と出ます。
+Claudeに「<strong>3000番を使っているプログラムを止めて</strong>」と頼めば解消できます。
+また、<code>localhost</code> のURLは <strong>自分のPCの中だけの住所</strong> なので、他の人に送っても開けません。</p>
+</div>
+<h3 id="http-https"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 11h-3.18C14.4 9.84 13.3 9 12 9s-2.4.84-2.82 2H6c-.33 0-2-.1-2-2V8c0-1.83 1.54-2 2-2h10.18C16.6 7.16 17.7 8 19 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3c-1.3 0-2.4.84-2.82 2H6C4.39 4 2 5.06 2 8v1c0 2.94 2.39 4 4 4h3.18c.42 1.16 1.52 2 2.82 2s2.4-.84 2.82-2H18c.33 0 2 .1 2 2v1c0 1.83-1.54 2-2 2H7.82C7.4 16.84 6.3 16 5 16a3 3 0 0 0-3 3 3 3 0 0 0 3 3c1.3 0 2.4-.84 2.82-2H18c1.61 0 4-1.07 4-4v-1c0-2.93-2.39-4-4-4m1-7a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1M5 20a1 1 0 0 1-1-1 1 1 0 0 1 1-1 1 1 0 0 1 1 1 1 1 0 0 1-1 1"/></svg></span> HTTP ／ HTTPS<a class="headerlink" href="#http-https" title="Permanent link">&para;</a></h3>
+<p><strong>Webでデータをやり取りするときの「通信のお約束」</strong> です。<strong>HTTPSは通信が暗号化</strong> されて安全。</p>
+<blockquote>
+<p>🔒 たとえ：HTTP＝はがき、HTTPS＝封筒に入れた手紙。</p>
+</blockquote>
+<h3 id="http"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m0 14H5.2L4 17.2V4h16zM8 9v2h4.5l-1.8 1.8L12 14l4-4-4-4-1.2 1.2L12.5 9z"/></svg></span> HTTPリクエスト ／ レスポンス<a class="headerlink" href="#http" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>リクエスト</strong> … ブラウザからサーバーへの <strong>お願い</strong>。</li>
+<li><strong>レスポンス</strong> … サーバーからの <strong>返事</strong>。</li>
+</ul>
+<p>Web上の操作（ログイン・検索・購入）は、すべてこの往復でできています。<strong>話しかけるのは必ずブラウザ側から</strong> で、サーバーから勝手に話しかけることはできません。</p>
+<blockquote>
+<p>📮 たとえ：手紙を出して（リクエスト）、返信をもらう（レスポンス）。</p>
+</blockquote>
+<h3 id="http_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 17V9H2V7h4v10zm18-2a2 2 0 0 1-2 2h-4v-2h4v-2h-2v-2h2V9h-4V7h4a2 2 0 0 1 2 2v1.5a1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1 1.5 1.5zm-8 0v2H8v-4a2 2 0 0 1 2-2h2V9H8V7h4a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-2v2z"/></svg></span> HTTPメソッド ／ ステータスコード<a class="headerlink" href="#http_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>メソッド</strong> … 「何をしてほしいか」の動詞。</li>
+<li><strong>ステータスコード</strong> … 「結果はどうだったか」の3桁の番号。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>メソッド</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>GET</strong></td>
+<td>見る・取ってくる</td>
+</tr>
+<tr>
+<td><strong>POST</strong></td>
+<td>新しく登録する</td>
+</tr>
+<tr>
+<td><strong>PUT / PATCH</strong></td>
+<td>書き換える</td>
+</tr>
+<tr>
+<td><strong>DELETE</strong></td>
+<td>消す</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>番号</th>
+<th>意味</th>
+<th>よく見る例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>200番台</strong></td>
+<td>成功 ✅</td>
+<td>200（OK）</td>
+</tr>
+<tr>
+<td><strong>300番台</strong></td>
+<td>引っ越し・転送</td>
+<td>301（移転しました）</td>
+</tr>
+<tr>
+<td><strong>400番台</strong></td>
+<td><strong>頼んだ側</strong>の問題</td>
+<td>401（未ログイン）／403（権限なし）／404（存在しない）</td>
+</tr>
+<tr>
+<td><strong>500番台</strong></td>
+<td><strong>サーバー側</strong>の問題 💥</td>
+<td>500（内部エラー）</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">エラーの切り分けに効く</p>
+<p>404なら「URLが違う」、401/403なら「ログインか権限」、500なら「サーバーの中で落ちている」。
+<strong>番号を伝えるだけで、Claudeの調査精度がぐっと上がります。</strong></p>
+</div>
+<h3 id="api-rest-api-sdk"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 7H5a2 2 0 0 0-2 2v8h2v-4h2v4h2V9a2 2 0 0 0-2-2m0 4H5V9h2m7-2h-4v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m0 4h-2V9h2m6 0v6h1v2h-4v-2h1V9h-1V7h4v2Z"/></svg></span> API ／ エンドポイント ／ REST API ／ SDK<a class="headerlink" href="#api-rest-api-sdk" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>API</strong> … プログラム同士が情報をやり取りするための <strong>窓口・取り決め</strong>。</li>
+<li><strong>エンドポイント</strong> … その窓口の <strong>具体的な住所（URL）</strong>。</li>
+<li><strong>REST API</strong> … 窓口の作り方の <strong>もっとも標準的なルール</strong>。</li>
+<li><strong>SDK</strong> … その窓口を <strong>らくに使えるようにした道具セット</strong>。</li>
+</ul>
+<blockquote>
+<p>🏪 たとえ：API が「注文カウンター」、エンドポイントが「その場所」、SDK が「注文を代行してくれる店員」。</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">外部サービス連携でつまずいたら</p>
+<p>AIは学習した時点の <strong>古い書き方</strong> を出してくることがあります。うまく動かないときは、
+「<strong>使っているSDKのバージョンは、最新の仕様に合っていますか？</strong>」と確認してもらいましょう。</p>
+</div>
+<h3 id="json"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3h2v2H5v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5h2v2H5c-1.07-.27-2-.9-2-2v-4a2 2 0 0 0-2-2H0v-2h1a2 2 0 0 0 2-2V5a2 2 0 0 1 2-2m14 0a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1v2h-1a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-2v-2h2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5h-2V3zm-7 12a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-4 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m8 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1"/></svg></span> JSON（ジェイソン）<a class="headerlink" href="#json" title="Permanent link">&para;</a></h3>
+<p><strong>データを整理して書くための「決まった書き方」</strong> です。設定やデータのやり取りでよく使われます。</p>
+<blockquote>
+<p>🧾 たとえ：項目名と中身をきれいに並べた「記入フォーマット」。</p>
+</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">1文字のミスで全部止まる</p>
+<p>JSONは書き方がとても厳格で、<strong>カンマ1つ多い・引用符の付け忘れ</strong> だけで読み込みが失敗します。
+AIが返した内容をそのまま扱うときは、<strong>失敗しても止まらないようにする処理</strong> を入れてもらうと安心です。</p>
+</div>
+<h3 id="webhook"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 21h4a2 2 0 0 1-2 2 2 2 0 0 1-2-2m11-2v1H3v-1l2-2v-6c0-3.1 2.03-5.83 5-6.71V4a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.29c2.97.88 5 3.61 5 6.71v6zm-4-8a5 5 0 0 0-5-5 5 5 0 0 0-5 5v7h10zm2.75-7.81-1.42 1.42A8.98 8.98 0 0 1 21 11h2c0-2.93-1.16-5.75-3.25-7.81M1 11h2c0-2.4.96-4.7 2.67-6.39L4.25 3.19A10.96 10.96 0 0 0 1 11"/></svg></span> Webhook（ウェブフック）<a class="headerlink" href="#webhook" title="Permanent link">&para;</a></h3>
+<p><strong>相手のサービス側で何かが起きた瞬間に、向こうから通知を送ってきてくれる仕組み</strong> です。</p>
+<blockquote>
+<p>📞 たとえ：普通のAPIは「できましたか？」と自分から何度も聞きに行く。Webhookは「できました」と向こうから電話がかかってくる。</p>
+</blockquote>
+<div class="admonition danger">
+<p class="admonition-title">通知の受け口は世界中に開いている</p>
+<p>Webhookの受け口は誰でもアクセスできる状態になるため、<strong>偽の通知を送りつけられる</strong> リスクがあります。
+「<strong>本物からの通知か確かめる処理（署名検証）</strong>」と「<strong>同じ通知が2回届いても二重処理しない仕組み</strong>」の2つを、必ず入れてもらってください。</p>
+</div>
+<h3 id="sse-websocket"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 3v2H8V3zm0 4v2H8V7zm0 4v2H8v-2zM5 15h14l-7 7z"/></svg></span> ストリーミング ／ SSE ／ WebSocket<a class="headerlink" href="#sse-websocket" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ストリーミング</strong> … 全部できあがるのを待たず、<strong>できた分から順に流して表示</strong> する方式。</li>
+<li><strong>SSE</strong> … サーバー → ブラウザへ <strong>一方通行</strong> で流す、軽い仕組み。</li>
+<li><strong>WebSocket</strong> … 回線をつなぎっぱなしにして <strong>双方向</strong> にやりとりする仕組み。</li>
+</ul>
+<blockquote>
+<p>🍣 たとえ：全品そろってから運ぶのではなく、できた皿から出す方式。</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">速くなるのは「待ち時間の体感」</p>
+<p>ストリーミングにしても、<strong>処理そのものが短くなるわけではありません</strong>。
+改善されるのは「最初の1文字が出るまでの待ち時間」です。</p>
+</div>
+<h3 id="cors-origin"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 11c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4 9 4zm-9 10c3.75-1 7-5.46 7-9.78V6.3l-7-3.12L5 6.3v4.92C5 15.54 8.25 20 12 21M11 7h2v6h-2zm0 8h2v2h-2z"/></svg></span> CORS（コルス） ／ オリジン（Origin）<a class="headerlink" href="#cors-origin" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>オリジン</strong> … 「http/https」「ドメイン」「ポート番号」の3点セットで決まる <strong>住所の単位</strong>。1つでも違えば別の住所扱い。</li>
+<li><strong>CORS</strong> … ブラウザが持つ <strong>「よその住所のデータを勝手に読ませない」防犯機能</strong> と、その許可設定。</li>
+</ul>
+<blockquote>
+<p>🚧 たとえ：勝手に他人の家の郵便物を読めないようにする決まり。読ませたい相手だけ、名指しで許可する。</p>
+</blockquote>
+<div class="admonition danger">
+<p class="admonition-title">「<code>*</code>（全部許可）で解決」は危険</p>
+<p>CORSエラーが出ると、<strong>すべてのサイトからのアクセスを許可する（<code>*</code>）</strong> という直し方で一瞬で消せてしまいます。
+ただしそれは <strong>防犯機能を全部外す</strong> のと同じです。Claudeに頼むときは
+「<code>*</code> は使わず、<strong>開発用のURLと本番のURLだけ</strong> を名指しで許可して」と伝えましょう。</p>
+</div>
+<hr />
+<h2 id="3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C7.58 3 4 4.79 4 7v10c0 2.21 3.59 4 8 4s8-1.79 8-4V7c0-2.21-3.58-4-8-4m6 14c0 .5-2.13 2-6 2s-6-1.5-6-2v-2.23c1.61.78 3.72 1.23 6 1.23s4.39-.45 6-1.23zm0-4.55c-1.3.95-3.58 1.55-6 1.55s-4.7-.6-6-1.55V9.64c1.47.83 3.61 1.36 6 1.36s4.53-.53 6-1.36zM12 9C8.13 9 6 7.5 6 7s2.13-2 6-2 6 1.5 6 2-2.13 2-6 2"/></svg></span> 3. データを保管する<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    S[スキーマ&lt;br/&gt;全体の設計図] --&gt; T[テーブル&lt;br/&gt;1枚の表]
+    T --&gt; C[列&lt;br/&gt;項目名]
+    T --&gt; R[行&lt;br/&gt;データ1件]</code></pre>
+<h3 id="db-sql"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4M4 9v3c0 2.21 3.58 4 8 4s8-1.79 8-4V9c0 2.21-3.58 4-8 4s-8-1.79-8-4m0 5v3c0 2.21 3.58 4 8 4s8-1.79 8-4v-3c0 2.21-3.58 4-8 4s-8-1.79-8-4"/></svg></span> データベース（DB） ／ SQL（エス・キュー・エル）<a class="headerlink" href="#db-sql" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>データベース</strong> … データを整理して保存・検索できる「倉庫」。</li>
+<li><strong>SQL</strong> … そのデータベースに <strong>問い合わせるための言葉</strong>。</li>
+</ul>
+<blockquote>
+<p>🗄️ たとえ：棚分けされた倉庫（DB）と、「○○を出して」と頼む伝票（SQL）。</p>
+</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Gitでは元に戻せない場所</p>
+<p>コードは <a href="../glossary/">Git</a> で過去に戻せますが、<strong>データベースの中身は Git の管理対象外</strong> です。
+本番のデータを触る変更をAIに頼むときは、特に慎重に確認してください。</p>
+</div>
+<h3 id="_4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 4h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m0 4v4h6V8zm8 0v4h6V8zm-8 6v4h6v-4zm8 0v4h6v-4z"/></svg></span> テーブル ／ 行 ／ 列 ／ スキーマ<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>Excelの表をイメージすると、ほぼそのままです。</p>
+<table>
+<thead>
+<tr>
+<th>言葉</th>
+<th>Excelでいうと</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>テーブル</strong></td>
+<td>1枚のシート（例：顧客一覧）</td>
+</tr>
+<tr>
+<td><strong>列（カラム）</strong></td>
+<td>縦の項目名（会社名・メール・契約日）</td>
+</tr>
+<tr>
+<td><strong>行（レコード）</strong></td>
+<td>横1行分のデータ（顧客1社ぶん）</td>
+</tr>
+<tr>
+<td><strong>スキーマ</strong></td>
+<td>どんなシートがあり、どんな項目を持つかの <strong>設計図全体</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Excelと決定的に違うところ</p>
+<p>Excelなら列を後から足して、既存の行を空欄のまま置いても平気です。
+データベースでは <strong>「必ず入力」ルールの列を後から足すと、既存のデータが全部ルール違反になって止まる</strong> ことがあります。
+列を追加してもらうときは「<strong>既存データには何を入れるか</strong>」まで一緒に決めてもらいましょう。</p>
+</div>
+<h3 id="crud"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg></span> クエリ ／ CRUD（クラッド）<a class="headerlink" href="#crud" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>クエリ</strong> … データベースへの <strong>1回分の命令</strong>。</li>
+<li><strong>CRUD</strong> … データ操作の基本4つの頭文字。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>操作</th>
+<th>危険度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>C</strong> reate</td>
+<td>登録する</td>
+<td>低（消せば戻せる）</td>
+</tr>
+<tr>
+<td><strong>R</strong> ead</td>
+<td>読む</td>
+<td>低（何も変わらない）</td>
+</tr>
+<tr>
+<td><strong>U</strong> pdate</td>
+<td>書き換える</td>
+<td><strong>高</strong>（前の値が消える）</td>
+</tr>
+<tr>
+<td><strong>D</strong> elete</td>
+<td>消す</td>
+<td><strong>高</strong>（戻せない）</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition danger">
+<p class="admonition-title">UとDは一発で取り返しがつかない</p>
+<p>条件の指定を1文字書き間違えただけで、<strong>全データを書き換える／全部消す</strong> ことがあります。
+更新・削除をAIに頼むときは「<strong>先に同じ条件で「何件が対象か」を数えて報告してから実行して</strong>」と一言添えてください。</p>
+</div>
+<h3 id="_5"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.5 3C5 3 3 5 3 7.5S5 12 7.5 12c2 0 3.6-1.2 4.2-3H15v3h3V9h3V6h-9.3c-.6-1.8-2.2-3-4.2-3m0 3C8.3 6 9 6.7 9 7.5S8.3 9 7.5 9 6 8.3 6 7.5 6.7 6 7.5 6m2.5 8c-1.6 0-4 1.1-4 4s2.4 4 4 4h1v-2h-1c-.3 0-2-.1-2-2 0-1.8 1.5-2 2-2h1v-2m2 0v2h1c.3 0 2 .1 2 2 0 1.8-1.5 2-2 2h-1v2h1c1.6 0 4-1.1 4-4s-2.4-4-4-4m-5 3v2h6v-2z"/></svg></span> 主キー ／ 外部キー ／ リレーション<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>主キー</strong> … その1件を確実に見分ける <strong>背番号</strong>（重複なし・空欄なし）。</li>
+<li><strong>外部キー</strong> … 別の表を <strong>指し示す項目</strong>（例：この注文は顧客ID 5番のもの）。</li>
+<li><strong>リレーション</strong> … 主キーと外部キーで結ばれた <strong>表どうしのつながり</strong>。</li>
+</ul>
+<blockquote>
+<p>🔗 たとえ：社員番号（主キー）で人を特定し、「担当者＝社員番号5番」と書いて紐づける（外部キー）。</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">名前をそれっぽくしただけでは繋がらない</p>
+<p>列名を <code>user_id</code> にしても、それだけでは「ただの数字の列」です。
+<strong>存在しない相手を指すデータをブロックしてもらう</strong> には、外部キーの制約を明示的に設定する必要があります。</p>
+</div>
+<h3 id="migration"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 16c.41 0 .81-.03 1.21-.06.19-.76.51-1.48.95-2.11-.69.11-1.42.17-2.16.17-2.42 0-4.7-.6-6-1.55V9.64c1.47.83 3.61 1.36 6 1.36s4.53-.53 6-1.36v1.55c.5-.12 1-.19 1.55-.19.15 0 .3 0 .45.03V7c0-2.21-3.58-4-8-4S4 4.79 4 7v10c0 2.21 3.59 4 8 4 .66 0 1.31-.04 1.92-.12-.35-.59-.61-1.24-.76-1.94-.37.06-.75.06-1.16.06-3.87 0-6-1.5-6-2v-2.23c1.61.78 3.72 1.23 6 1.23m0-11c3.87 0 6 1.5 6 2s-2.13 2-6 2-6-1.5-6-2 2.13-2 6-2m11 12.5c0 .82-.25 1.58-.67 2.21l-1.09-1.09c.17-.34.26-.72.26-1.12A2.5 2.5 0 0 0 19 15v1.5l-2.25-2.25L19 12v1.5c2.21 0 4 1.79 4 4m-4 1 2.25 2.25L19 23v-1.5c-2.21 0-4-1.79-4-4 0-.82.25-1.58.67-2.21l1.09 1.09c-.17.34-.26.72-.26 1.12A2.5 2.5 0 0 0 19 20z"/></svg></span> マイグレーション（Migration）<a class="headerlink" href="#migration" title="Permanent link">&para;</a></h3>
+<p><strong>データベースの構造の変更を、履歴のあるファイルとして記録・適用していく仕組み</strong> です。</p>
+<blockquote>
+<p>🧾 たとえ：間取り変更の記録を1枚ずつ残しておき、同じ順で当てれば、どの部屋も同じ間取りに揃う。</p>
+</blockquote>
+<div class="admonition danger">
+<p class="admonition-title">「リセットして作り直す」は本番では致命傷</p>
+<p>構造がこんがらがったとき、<strong>データベースを初期化して当て直す</strong> のは手元では有効です。
+しかし <strong>公開中の本番で実行すると、これまでのユーザー登録も売上も全部消えます</strong>（構造は戻ってもデータは戻りません）。
+リセットを提案されたら「<strong>それはどの接続先に適用されますか？ 本番ではないですね？</strong>」と必ず確認を。</p>
+</div>
+<h3 id="orm"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg></span> ORM（オー・アール・エム）<a class="headerlink" href="#orm" title="Permanent link">&para;</a></h3>
+<p><strong>SQLを直接書かなくても、普段のプログラミング言語の書き方のままデータベースを操作できる道具</strong> です。</p>
+<blockquote>
+<p>🗣️ たとえ：外国語（SQL）を話さずに済ませてくれる「自動通訳」。</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">便利さの裏で通信が増えていることがある</p>
+<p>書き方が簡単になるぶん、<strong>裏で何十回も倉庫に問い合わせが飛んでいる</strong> ことに気づけません。
+表示が遅いときは「<strong>まとめて取得する形に最適化できませんか？</strong>」と聞いてみてください。</p>
+</div>
+<h3 id="_6"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m7 15 4.5-6 3.5 4.5 2.5-3L21 15m1-11h-8l-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2M2 6H0v14a2 2 0 0 0 2 2h18v-2H2z"/></svg></span> オブジェクトストレージ<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p><strong>画像・動画・PDFなど、大きなファイルを置くための専用の倉庫</strong> です。</p>
+<blockquote>
+<p>🏬 たとえ：大きな荷物は倉庫に預け、データベースには「預り証（URL）」だけ書いておく2段構え。</p>
+</blockquote>
+<div class="admonition danger">
+<p class="admonition-title">既定で「全員が見られる」になりがち</p>
+<p>請求書PDFや個人の写真を、誰でも見られる置き場に入れてしまうと、
+<strong>URLさえ分かればログインなしで全世界からダウンロードできる</strong> 状態になります。
+見せてよい相手が限られるファイルは、<strong>非公開の置き場＋一定時間だけ有効なURL</strong> を使うようAIに指示してください。</p>
+</div>
+<hr />
+<h2 id="4"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17a2 2 0 0 1-2-2c0-1.11.89-2 2-2a2 2 0 0 1 2 2 2 2 0 0 1-2 2m6 3V10H6v10zm0-12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10c0-1.11.89-2 2-2h1V6a5 5 0 0 1 5-5 5 5 0 0 1 5 5v2zm-6-5a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3"/></svg></span> 4. 安全に使う（認証・認可）<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A[アクセス] --&gt; B{認証&lt;br/&gt;本人？}
+    B -- はい --&gt; C{認可&lt;br/&gt;その操作をしてよい人？}
+    B -- いいえ --&gt; X[401 未ログイン]
+    C -- はい --&gt; OK([実行 ✅])
+    C -- いいえ --&gt; Y[403 権限なし]</code></pre>
+<h3 id="authentication-authorization"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5zm0 2.18 7 3.12v4.92c0 1.7-.5 3.43-1.35 4.95C16 14.94 13.26 14.5 12 14.5s-4 .44-5.65 1.67C5.5 14.65 5 12.92 5 11.22V6.3zM12 6a3.5 3.5 0 0 0-3.5 3.5A3.5 3.5 0 0 0 12 13a3.5 3.5 0 0 0 3.5-3.5A3.5 3.5 0 0 0 12 6m0 2a1.5 1.5 0 0 1 1.5 1.5A1.5 1.5 0 0 1 12 11a1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 12 8m0 8.5c1.57 0 3.64.61 4.53 1.34C15.29 19.38 13.7 20.55 12 21c-1.7-.45-3.29-1.62-4.53-3.16.9-.73 2.96-1.34 4.53-1.34"/></svg></span> 認証（Authentication） ／ 認可（Authorization）<a class="headerlink" href="#authentication-authorization" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>認証</strong> … 「<strong>本人かどうか</strong>」を確かめること。</li>
+<li><strong>認可</strong> … 「<strong>その人がその操作をしてよいか</strong>」を判断すること。</li>
+</ul>
+<blockquote>
+<p>🪪 たとえ：ビルの入口で社員証を見せるのが認証。そのうえで「サーバー室に入れるかどうか」が認可。</p>
+</blockquote>
+<div class="admonition danger">
+<p class="admonition-title">AIがいちばん抜かすのは「認可」</p>
+<p>ログイン画面（認証）は頼めばきれいに作ってくれます。
+ところが <strong>URLの番号を他人のものに書き換えてアクセスされたときに弾く処理（認可）は、指示しないと抜けがち</strong> です。
+自分のアカウントでテストしている限り気づけないので、必ず明示的に依頼してください。</p>
+<p>また「管理者以外はボタンを隠す」だけでは不十分です。<strong>画面を触らずに直接APIを呼べば実行できてしまう</strong> ため、サーバー側でも確認が必要です。</p>
+</div>
+<h3 id="cookie-jwt"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.87 10.5C20.6 10 20 10 20 10h-2V9c0-1-1-1-1-1h-2V7c0-1-1-1-1-1h-1V4c0-1-1-1-1-1a9 9 0 1 0 9 9c0-.5-.04-1-.13-1.5m-9.55 8.46c.68-.14 1.18-.74 1.18-1.46 0-.83-.67-1.5-1.5-1.5a1.498 1.498 0 0 0-.84 2.74c-2.62-.7-4.66-2.93-5.07-5.62C5 12.61 5 12.11 5 11.62c.07.77.71 1.38 1.5 1.38.83 0 1.5-.67 1.5-1.5S7.33 10 6.5 10c-.68 0-1.25.46-1.43 1.08C5.47 8 7.91 5.5 11 5.07V6.5c0 .83.67 1.5 1.5 1.5h.5v.5c0 .83.67 1.5 1.5 1.5H16v.5c0 .83.67 1.5 1.5 1.5H19c0 4.08-3.5 7.36-7.68 6.96M9.5 9C8.67 9 8 8.33 8 7.5S8.67 6 9.5 6s1.5.67 1.5 1.5S10.33 9 9.5 9m3.5 3.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5.67-1.5 1.5-1.5 1.5.67 1.5 1.5m5 2c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5.67-1.5 1.5-1.5 1.5.67 1.5 1.5"/></svg></span> セッション ／ Cookie ／ トークン ／ JWT<a class="headerlink" href="#cookie-jwt" title="Permanent link">&para;</a></h3>
+<p>ログインした状態が続く仕組みのセットです。</p>
+<table>
+<thead>
+<tr>
+<th>言葉</th>
+<th>役割</th>
+<th>たとえ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>セッション</strong></td>
+<td>ログインが続いている状態そのもの</td>
+<td>入館中</td>
+</tr>
+<tr>
+<td><strong>トークン / JWT</strong></td>
+<td>本人だと証明する暗号の文字列</td>
+<td>会員証</td>
+</tr>
+<tr>
+<td><strong>Cookie</strong></td>
+<td>ブラウザがその会員証を自動で持ち歩く入れ物</td>
+<td>財布</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">会員証の置き場所で安全性が変わる</p>
+<p>トークンをブラウザの一般的な保管場所に置くと、<strong>悪意のあるスクリプトから読み取られる</strong> 危険があります。
+Cookieに入れる場合も、<strong>スクリプトから読めない／暗号化通信のときだけ送る／他サイト経由では送らない</strong> の3つの設定が入っているか、Claudeに確認してもらいましょう。</p>
+</div>
+<h3 id="oauth-sso"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .89-2 2v4h2V5h14v14H5v-4H3v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-8.92 12.58L11.5 17l5-5-5-5-1.42 1.41L12.67 11H3v2h9.67z"/></svg></span> OAuth（オーオース） ／ SSO<a class="headerlink" href="#oauth-sso" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>OAuth</strong> … 自分のアプリにパスワードを打たずに、<strong>GoogleやGitHubのアカウントでログインできる仕組み</strong>。</li>
+<li><strong>SSO</strong> … 1組のIDとパスワードで、<strong>社内の複数のシステムにまとめてログインできる仕組み</strong>。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">ドメインを変えたら設定も変える</p>
+<p>OAuthは「ログイン後に戻ってくるURL」を事前に登録します。1文字でも違うとエラーになるので、
+<strong>独自ドメインへの変更時は、この登録の更新を忘れずに</strong>。</p>
+</div>
+<h3 id="rbac-rls"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.8 10C5.4 8.8 4.3 8 3 8c-1.7 0-3 1.3-3 3s1.3 3 3 3c1.3 0 2.4-.8 2.8-2H7v2h2v-2h2v-2zM3 12c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1m13-8c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4m0 6.1c-1.2 0-2.1-.9-2.1-2.1s.9-2.1 2.1-2.1 2.1.9 2.1 2.1-.9 2.1-2.1 2.1m0 2.9c-2.7 0-8 1.3-8 4v3h16v-3c0-2.7-5.3-4-8-4m6.1 5.1H9.9V17c0-.6 3.1-2.1 6.1-2.1s6.1 1.5 6.1 2.1z"/></svg></span> 権限 ／ ロール ／ RBAC ／ RLS<a class="headerlink" href="#rbac-rls" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ロール（役割）</strong> … 管理者・一般・ゲストといった <strong>立場</strong>。</li>
+<li><strong>RBAC</strong> … その <strong>役割ごとにできることを決める</strong> やり方。</li>
+<li><strong>RLS</strong> … データベースの <strong>1行ごとに「見てよい人」を限定する</strong> 強力な仕組み。</li>
+</ul>
+<blockquote>
+<p>🔐 たとえ：RBACが「役職で入れる部屋を決める」、RLSが「書類1枚ごとに閲覧者を指定する」。</p>
+</blockquote>
+<h3 id="environment-variable"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.25 12c0 .23-.02.46-.05.68l1.48 1.16c.13.11.17.29.08.45l-1.4 2.42c-.09.15-.27.21-.43.15l-1.74-.7c-.36.28-.76.51-1.19.69l-.25 1.85c-.03.17-.18.3-.35.3h-2.8c-.17 0-.32-.13-.35-.3L10 16.85c-.44-.18-.83-.41-1.19-.69l-1.74.7c-.16.06-.34 0-.43-.15l-1.4-2.42a.35.35 0 0 1 .08-.45l1.48-1.16c-.03-.22-.05-.45-.05-.68s.02-.46.05-.68l-1.48-1.16a.35.35 0 0 1-.08-.45l1.4-2.42c.09-.16.27-.22.43-.16l1.74.71c.36-.28.75-.52 1.19-.69l.25-1.86c.03-.16.18-.29.35-.29h2.8c.17 0 .32.13.35.29L14 7.15c.43.17.83.41 1.19.69l1.74-.71c.16-.06.34 0 .43.16l1.4 2.42c.09.15.05.34-.08.45l-1.48 1.16c.03.22.05.45.05.68M19 3H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-7 7c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2"/></svg></span> 環境変数（Environment Variable）<a class="headerlink" href="#environment-variable" title="Permanent link">&para;</a></h3>
+<p><strong>設定値（特にAPIキーなどの秘密）を、コードの外に置いておく仕組み</strong> です。秘密を直接書かずに済みます。</p>
+<blockquote>
+<p>🔐 たとえ：金庫に入れておき、コードからは「金庫の中のアレ」と呼ぶイメージ。</p>
+</blockquote>
+<h3 id="api"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6.5C4 4 6 2 8.5 2S13 4 13 6.5c0 1.96-1.25 3.63-3 4.24V15h3v3h-3v4H7V10.74c-1.75-.61-3-2.28-3-4.24m3 0C7 7.33 7.67 8 8.5 8S10 7.33 10 6.5 9.33 5 8.5 5 7 5.67 7 6.5M18 7h2v6h-2m0 4h2v-2h-2"/></svg></span> シークレット ／ APIキー ／ トークン<a class="headerlink" href="#api" title="Permanent link">&para;</a></h3>
+<p><strong>プログラムが使う「パスワードのような秘密のカギ」</strong> です。外部に出してはいけない情報をまとめて <strong>シークレット</strong> と呼びます。</p>
+<div class="admonition danger">
+<p class="admonition-title">コードに直接書かない</p>
+<p>AIは動作確認を急いで <strong>キーをコードに直接書いてしまう</strong> ことがあります。
+そのままGitHubに公開すると、<strong>自動巡回に読み取られて不正利用（高額請求）</strong> につながります。</p>
+<ul>
+<li>変更を確認するときは「<strong>秘密情報が直接書かれていないか、<code>.env</code> に分けられているか</strong>」をチェック</li>
+<li><code>.env</code> が <a href="../glossary/">.gitignore</a> で除外されているかも確認</li>
+<li>パスワード・APIキーは <strong>AIに渡さない／画面に貼らない</strong>。実在の顧客名・案件名や認証情報も同様です（→ <a href="../ai-safety/">AIと安全に付き合う</a>）</li>
+</ul>
+</div>
+<h3 id="_7"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7h5v10h-5v2a1 1 0 0 0 1 1h2v2h-2.5c-.55 0-1.5-.45-1.5-1 0 .55-.95 1-1.5 1H12v-2h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-2V2h2.5c.55 0 1.5.45 1.5 1 0-.55.95-1 1.5-1H20v2h-2a1 1 0 0 0-1 1zM2 7h11v2H4v6h9v2H2zm18 8V9h-3v6z"/></svg></span> 入力検証（バリデーション）<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p><strong>送られてきたデータがルールを満たしているか確かめる仕組み</strong> です（形式・文字数・必須項目など）。</p>
+<div class="admonition warning">
+<p class="admonition-title">画面側のチェックだけでは守れない</p>
+<p>ブラウザ側のチェックは <strong>利用者側で無効にできてしまいます</strong>。
+<strong>サーバー側でも同じチェック</strong> が動いているか確認しましょう。</p>
+</div>
+<h3 id="web"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 7h-2.81c-.45-.8-1.07-1.5-1.82-2L16 3.41 14.59 2l-2.17 2.17a6 6 0 0 0-2.83 0L7.41 2 6 3.41 7.62 5c-.75.5-1.36 1.21-1.81 2H3v2h2.09c-.06.33-.09.66-.09 1v1H3v2h2v1c0 .34.03.67.09 1H3v2h2.81A6 6 0 0 0 13 19.65V19c0-.57.09-1.14.25-1.69-.66.45-1.45.69-2.25.69-2.21 0-4-1.79-4-4v-4c0-2.21 1.79-4 4-4s4 1.79 4 4v4c0 .19 0 .39-.05.58.59-.54 1.29-.96 2.05-1.23V13h2v-2h-2v-1c0-.34-.03-.67-.09-1H19zm2.34 9-3.59 3.59L16.16 18 15 19.16l2.75 3 4.75-4.75zM13 9v2H9V9zm0 4v2H9v-2z"/></svg></span> Web脆弱性（ぜいじゃくせい）<a class="headerlink" href="#web" title="Permanent link">&para;</a></h3>
+<p><strong>攻撃に使われてしまう設計上の穴</strong> のことです。代表的な3つ:</p>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th>ざっくり何が起きるか</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SQLインジェクション</strong></td>
+<td>入力欄に細工され、データベースを勝手に操作される</td>
+</tr>
+<tr>
+<td><strong>XSS</strong></td>
+<td>他人のブラウザで不正なスクリプトを動かされる</td>
+</tr>
+<tr>
+<td><strong>CSRF</strong></td>
+<td>ログイン状態を横取りされ、意図しない操作をさせられる</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🕳️ たとえ：どれも20年以上前から知られた「定番の落とし穴」。対策方法も確立しています。</p>
+</blockquote>
+<hr />
+<h2 id="5"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 4a8 8 0 0 1 8 8 8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8m0 2a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6 6 6 0 0 0-6-6m-1 2h1.5v3.78l2.33 2.33-1.06 1.06L14 12.4zM2 18a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3.83c.31.71.71 1.38 1.17 2zm1-5a1 1 0 0 1-1-1 1 1 0 0 1 1-1h2.05L5 12l.05 1zm1-5a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3c-.46.62-.86 1.29-1.17 2z"/></svg></span> 5. 動かし方のくふう<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h3 id="_8"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2h12v6l-4 4 4 4v6H6v-6l4-4-4-4zm10 14.5-4-4-4 4V20h8zm-4-5 4-4V4H8v3.5zM10 6h4v.75l-2 2-2-2z"/></svg></span> 同期 ／ 非同期 ／ バックグラウンドジョブ ／ キュー<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>同期</strong> … 終わるまで待つ。その間、画面は固まる。</li>
+<li><strong>非同期</strong> … 「受け付けました」とすぐ返し、<strong>実作業は裏で進める</strong>。</li>
+<li><strong>キュー（待ち行列）</strong> … 裏で順番待ちさせる列。</li>
+<li><strong>バックグラウンドジョブ</strong> … その列に並ぶ、裏で動く作業。</li>
+</ul>
+<blockquote>
+<p>🎫 たとえ：受付だけ先に済ませて番号札を渡し、調理は裏で進める方式。</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">速くなるのは「待たされ方」</p>
+<p>非同期にしても <strong>作業時間そのものは短くなりません</strong>。改善されるのは
+「画面が固まらない」「すぐ次の操作に進める」という体感です。</p>
+</div>
+<h3 id="cron"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 13h1.5v2.82l2.44 1.41-.75 1.3L15 16.69zm4-5H5v11h4.67c-.43-.91-.67-1.93-.67-3a7 7 0 0 1 7-7c1.07 0 2.09.24 3 .67zM5 21a2 2 0 0 1-2-2V5c0-1.11.89-2 2-2h1V1h2v2h8V1h2v2h1a2 2 0 0 1 2 2v6.1c1.24 1.26 2 2.99 2 4.9a7 7 0 0 1-7 7c-1.91 0-3.64-.76-4.9-2zm11-9.85A4.85 4.85 0 0 0 11.15 16c0 2.68 2.17 4.85 4.85 4.85A4.85 4.85 0 0 0 20.85 16c0-2.68-2.17-4.85-4.85-4.85"/></svg></span> Cron（クロン） ／ 定期実行<a class="headerlink" href="#cron" title="Permanent link">&para;</a></h3>
+<p><strong>決まった時刻や間隔で、プログラムを自動実行する仕組み</strong> です（例：毎朝9時に集計を送る）。</p>
+<div class="admonition warning">
+<p class="admonition-title">時刻は世界標準時（UTC）のことが多い</p>
+<p>クラウド上のサーバーの時計は <strong>日本時間ではない</strong> のが普通です。
+「朝9時」のつもりの設定が <strong>夕方18時に動く</strong> といったズレが起きます。
+時刻を指定するときは「<strong>日本時間の◯時になるように</strong>」と明示しましょう。</p>
+</div>
+<hr />
+<h2 id="6"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2v2h1v14a4 4 0 0 0 4 4 4 4 0 0 0 4-4V4h1V2zm4 14c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1m2-4c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1m1-5h-4V4h4z"/></svg></span> 6. 品質を守る<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<h3 id="_9"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 8h-2.81c-.45-.8-1.07-1.5-1.82-2L17 4.41 15.59 3l-2.17 2.17a6 6 0 0 0-2.83 0L8.41 3 7 4.41 8.62 6c-.75.5-1.36 1.21-1.81 2H4v2h2.09c-.06.33-.09.66-.09 1v1H4v2h2v1c0 .34.03.67.09 1H4v2h2.81A5.99 5.99 0 0 0 15 20.18c.91-.52 1.67-1.28 2.19-2.18H20v-2h-2.09c.06-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.03-.67-.09-1H20zm-4 7a4 4 0 0 1-4 4 4 4 0 0 1-4-4v-4a4 4 0 0 1 4-4 4 4 0 0 1 4 4zm-2-5v2h-4v-2zm-4 4h4v2h-4z"/></svg></span> バグ ／ エラー ／ <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 22v-2h3v-3h2v3.5c0 .39-.16.74-.46 1.04s-.65.46-1.04.46zM7 22H3.5c-.39 0-.74-.16-1.04-.46S2 20.89 2 20.5V17h2v3h3zM17 2h3.5c.39 0 .74.16 1.04.46s.46.65.46 1.04V7h-2V4h-3zM7 2v2H4v3H2V3.5c0-.39.16-.74.46-1.04S3.11 2 3.5 2zm3.5 4C13 6 15 8 15 10.5c0 .88-.25 1.7-.69 2.4l3.26 3.26-1.41 1.41-3.26-3.26c-.7.44-1.52.69-2.4.69C8 15 6 13 6 10.5S8 6 10.5 6m0 2a2.5 2.5 0 0 0 0 5 2.5 2.5 0 0 0 0-5"/></svg></span> デバッグ<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>バグ</strong> … プログラムの不具合・間違い。</li>
+<li><strong>エラー</strong> … 処理がうまくいかず止まったときの知らせ。</li>
+<li><strong>デバッグ</strong> … 原因を探して直すこと。</li>
+</ul>
+<blockquote>
+<p>🐛 たとえ：手順書の書き間違い（バグ）、止まった合図（エラー）、それを直す作業（デバッグ）。慌てずでOK（→ <a href="../ai-errors/">エラーとの付き合い方</a>）。</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">「エラーが出ない＝バグがない」ではない</p>
+<p>計算結果が1円ずれているようなバグは、<strong>最後まで正常に終わるほどエラーは出ません</strong>。
+エラー画面が無いときは「<strong>どう操作したら／本来どうなるべきで／実際どうなったか</strong>」を言葉で伝えましょう。</p>
+</div>
+<h3 id="log"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 12c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L21 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5M5 3h14c1.11 0 2 .89 2 2v8.03c-.5-.8-1.19-1.49-2-2.03V5H5v14h4.5c.31.75.76 1.42 1.31 2H5c-1.11 0-2-.89-2-2V5c0-1.11.89-2 2-2m2 4h10v2H7zm0 4h5.03c-.8.5-1.49 1.19-2.03 2H7zm0 4h2.17c-.11.5-.17 1-.17 1.5v.5H7z"/></svg></span> ログ（Log）<a class="headerlink" href="#log" title="Permanent link">&para;</a></h3>
+<p><strong>プログラムが「何をしたか」を記録した履歴</strong> です。不具合の原因を調べるときに見ます。</p>
+<blockquote>
+<p>📋 たとえ：作業の「実況メモ・記録」。</p>
+</blockquote>
+<h3 id="_10"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 13v-2h14v2zm0 6v-2h14v2zM7 7V5h14v2zM3 8V5H2V4h2v4zm-1 9v-1h3v4H2v-1h2v-.5H3v-1h1V17zm2.25-7a.75.75 0 0 1 .75.75c0 .2-.08.39-.21.52L3.12 13H5v1H2v-.92L4 11H2v-1z"/></svg></span> スタックトレース<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p><strong>エラーが起きるまでに、どのファイルのどこを通ったかの経路の記録</strong> です。</p>
+<blockquote>
+<p>🧭 たとえ：事故が起きるまでの走行ルートを記録したドライブレコーダー。</p>
+</blockquote>
+<div class="admonition success">
+<p class="admonition-title">これをそのまま貼るのがいちばん速い</p>
+<p>「エラーが出た」とだけ伝えるより、<strong>スタックトレースを省略せずそのまま貼る</strong> ほうが、
+Claudeは原因のファイルと行をピンポイントで特定できます。</p>
+</div>
+<h3 id="e2e"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.41 13.41 6 19l1.41-1.42L1.83 12m20.41-6.42L11.66 16.17 7.5 12l-1.43 1.41L11.66 19l12-12M18 7l-1.41-1.42-6.35 6.35 1.42 1.41z"/></svg></span> 単体テスト ／ 結合テスト ／ E2Eテスト<a class="headerlink" href="#e2e" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>種類</th>
+<th>何を確かめるか</th>
+<th>たとえ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>単体テスト</strong></td>
+<td>部品ひとつが正しく動くか</td>
+<td>ネジ1本の強度検査</td>
+</tr>
+<tr>
+<td><strong>結合テスト</strong></td>
+<td>部品どうしの連携が正しいか</td>
+<td>組み立てた部分の動作確認</td>
+</tr>
+<tr>
+<td><strong>E2Eテスト</strong></td>
+<td>利用者の操作を最初から最後まで再現</td>
+<td>実際に運転して1周してみる</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_11"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-9 9H0l4 4 4-4H5a7 7 0 0 1 7-7 7 7 0 0 1 7 7 7 7 0 0 1-7 7c-1.5 0-2.91-.5-4.06-1.3L6.5 19.14A9.1 9.1 0 0 0 12 21a9 9 0 0 0 9-9 9 9 0 0 0-9-9m2 9a2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2"/></svg></span> リグレッション ／ テストカバレッジ<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>リグレッション（デグレ）</strong> … 新しい修正のせいで、<strong>今まで動いていた別の機能が壊れる</strong> こと。</li>
+<li><strong>テストカバレッジ</strong> … コード全体のうち、テストで確認できている <strong>割合</strong>。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">AI開発でいちばん起きやすい事故</p>
+<p>AIは頼んでいない箇所まで書き換えることがあるため、リグレッションが起きやすいです。
+変更を頼むときに「<strong>他の既存機能への影響（リグレッション）がないか先に確認して</strong>」と添えるだけで、かなり防げます。</p>
+</div>
+<h3 id="_12"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 22v-2h3v-3h2v3.5c0 .39-.16.74-.46 1.04s-.65.46-1.04.46zM7 22H3.5c-.39 0-.74-.16-1.04-.46S2 20.89 2 20.5V17h2v3h3zM17 2h3.5c.39 0 .74.16 1.04.46s.46.65.46 1.04V7h-2V4h-3zM7 2v2H4v3H2V3.5c0-.39.16-.74.46-1.04S3.11 2 3.5 2zm3.5 4C13 6 15 8 15 10.5c0 .88-.25 1.7-.69 2.4l3.26 3.26-1.41 1.41-3.26-3.26c-.7.44-1.52.69-2.4.69C8 15 6 13 6 10.5S8 6 10.5 6m0 2a2.5 2.5 0 0 0 0 5 2.5 2.5 0 0 0 0-5"/></svg></span> 静的解析（せいてきかいせき）<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<p><strong>プログラムを動かさずに、書かれた文字を読んで問題を指摘してくれる仕組み</strong> です。書式を整えるもの、危ない書き方を警告するもの、型の不整合を調べるものなどがあります。</p>
+<div class="admonition danger">
+<p class="admonition-title">「警告を黙らせる」直し方に注意</p>
+<p>AIは、根本原因を直す代わりに <strong>「この行のチェックだけ無視する」設定を書き足して</strong> 通してしまうことがあります。
+「<strong>チェックを無効化せず、原因自体を直して</strong>」と伝えましょう。</p>
+</div>
+<h3 id="ci-cd"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 6v3l4-4-4-4v3a8 8 0 0 0-8 8c0 1.57.46 3.03 1.24 4.26L6.7 14.8A5.9 5.9 0 0 1 6 12a6 6 0 0 1 6-6m6.76 1.74L17.3 9.2c.44.84.7 1.8.7 2.8a6 6 0 0 1-6 6v-3l-4 4 4 4v-3a8 8 0 0 0 8-8c0-1.57-.46-3.03-1.24-4.26"/></svg></span> CI ／ CD<a class="headerlink" href="#ci-cd" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>CI</strong> … コードを送るたびに、<strong>自動でテストやチェックを走らせる</strong> 仕組み。</li>
+<li><strong>CD</strong> … その検査を通ったものだけを、<strong>自動で公開まで運ぶ</strong> 仕組み。</li>
+</ul>
+<blockquote>
+<p>🏭 たとえ：ベルトコンベアで自動検品（CI）し、合格品だけ出荷（CD）する。</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">「私のPCでは動く」を防いでくれる</p>
+<p>CIは手元の環境に頼らず、まっさらな場所で検証します。GitHub上で赤いバツが出たら、
+<strong>そのログをそのままClaudeに渡す</strong> のが最短です（→ <a href="../glossary/">GitHub Actions</a>）。</p>
+</div>
+<hr />
+<h2 id="7"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m13.13 22.19-1.63-3.83c1.57-.58 3.04-1.36 4.4-2.27zM5.64 12.5l-3.83-1.63 6.1-2.77C7 9.46 6.22 10.93 5.64 12.5M19.22 4c.28 0 .53 0 .74.05.17 1.39-.02 4.25-3.3 7.53-1.7 1.71-3.73 3.02-6.01 3.89l-2.15-2.1c.92-2.31 2.23-4.34 3.92-6.03C15.18 4.58 17.64 4 19.22 4m0-2c-1.98 0-4.98.69-8.22 3.93-2.19 2.19-3.5 4.6-4.35 6.71-.28.75-.09 1.57.46 2.13l2.13 2.12c.38.38.89.61 1.42.61.23 0 .47-.06.7-.15A19.1 19.1 0 0 0 18.07 13c5.66-5.66 3.54-10.61 3.54-10.61S20.7 2 19.22 2m-4.68 7.46c-.78-.78-.78-2.05 0-2.83s2.05-.78 2.83 0c.77.78.78 2.05 0 2.83s-2.05.78-2.83 0m-5.66 7.07-1.41-1.41zM6.24 22l3.64-3.64c-.34-.09-.67-.24-.97-.45L4.83 22zM2 22h1.41l4.77-4.76-1.42-1.41L2 20.59zm0-2.83 4.09-4.08c-.21-.3-.36-.62-.45-.97L2 17.76z"/></svg></span> 7. 公開と運用<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    D[開発&lt;br/&gt;手元のPC] --&gt; P[Preview&lt;br/&gt;確認用]
+    P --&gt; S[Staging&lt;br/&gt;本番リハーサル]
+    S --&gt; R[Production&lt;br/&gt;本番公開 🌐]</code></pre>
+<h3 id="preview-staging"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 16.54 7.37-5.74L21 12.07l-9 7-9-7 1.62-1.26zM12 14 3 7l9-7 9 7zm0-11.47L6.26 7 12 11.47 17.74 7zm0 18.94 7.37-5.74L21 17l-9 7-9-7 1.62-1.26z"/></svg></span> 環境（開発 / Preview / Staging / 本番）<a class="headerlink" href="#preview-staging" title="Permanent link">&para;</a></h3>
+<p>コードが利用者に届くまでに通る、<strong>独立した「動かす場所」</strong> です。</p>
+<table>
+<thead>
+<tr>
+<th>環境</th>
+<th>役割</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>開発（development）</strong></td>
+<td>自分のPCの中</td>
+</tr>
+<tr>
+<td><strong>Preview</strong></td>
+<td>変更ごとに自動で作られる、確認用の使い捨てURL</td>
+</tr>
+<tr>
+<td><strong>Staging</strong></td>
+<td>本番と同じ条件で行う最終リハーサル</td>
+</tr>
+<tr>
+<td><strong>本番（Production）</strong></td>
+<td>実際の利用者が使う場所</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition danger">
+<p class="admonition-title">テスト環境が本番のデータを触っていないか</p>
+<p>各環境の <strong>接続先（データベース・決済のキー）が本番のまま</strong> だと、
+テストのつもりの操作で <strong>本物のデータが書き換わる／本物の請求が発生</strong> します。</p>
+</div>
+<h3 id="_13"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1M9 5h1V3H9zm0 8h1v-2H9zm0 8h1v-2H9zM5 3v2h2V3zm0 8v2h2v-2zm0 8v2h2v-2z"/></svg></span> ホスティング ／ サーバーレス<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ホスティング</strong> … アプリを置いて動かす <strong>場所を借りるサービス</strong>。</li>
+<li><strong>サーバーレス</strong> … サーバーが無いという意味ではなく、<strong>管理をすべて任せられる方式</strong>。使った分だけ課金。</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">サーバーレスのクセ</p>
+<p>しばらくアクセスが無いあとの1回目だけ、起動に数秒かかること（コールドスタート）があります。
+また <strong>1回の処理時間に上限</strong> があるため、重い処理では注意が必要です。</p>
+</div>
+<h3 id="dns-https"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg></span> ドメイン ／ DNS ／ HTTPS<a class="headerlink" href="#dns-https" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>ドメイン</strong> … <code>example.com</code> のような、人が読める住所。</li>
+<li><strong>DNS</strong> … その名前を、機械用の番号（IPアドレス）に翻訳する <strong>電話帳</strong>。</li>
+<li><strong>HTTPS</strong> … 通信を暗号化し、接続先が本物だと証明する仕組み（ブラウザの鍵マーク 🔒）。</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">ドメイン変更は「外部連携」が総崩れになりやすい</p>
+<p>コードは無事でも、<strong>ログイン後の戻り先・通知の宛先・CORSの許可リスト</strong> などが古いドメインのままだと動かなくなります。
+変更するときは「<strong>ドメイン設定に依存している箇所を全部洗い出して</strong>」と頼みましょう。</p>
+</div>
+<h3 id="_14"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m13.13 22.19-1.63-3.83c1.57-.58 3.04-1.36 4.4-2.27zM5.64 12.5l-3.83-1.63 6.1-2.77C7 9.46 6.22 10.93 5.64 12.5M21.61 2.39S16.66.269 11 5.93c-2.19 2.19-3.5 4.6-4.35 6.71-.28.75-.09 1.57.46 2.13l2.13 2.12c.55.56 1.37.74 2.12.46A19.1 19.1 0 0 0 18.07 13c5.66-5.66 3.54-10.61 3.54-10.61m-7.07 7.07c-.78-.78-.78-2.05 0-2.83s2.05-.78 2.83 0c.77.78.78 2.05 0 2.83s-2.05.78-2.83 0m-5.66 7.07-1.41-1.41zM6.24 22l3.64-3.64c-.34-.09-.67-.24-.97-.45L4.83 22zM2 22h1.41l4.77-4.76-1.42-1.41L2 20.59zm0-2.83 4.09-4.08c-.21-.3-.36-.62-.45-.97L2 17.76z"/></svg></span> デプロイ ／ リリース ／ ロールバック<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>デプロイ</strong> … 組み上がったプログラムを <strong>公開先のサーバーに置く</strong> 作業。</li>
+<li><strong>リリース</strong> … それを <strong>実際に利用者が使える状態にする</strong> こと。</li>
+<li><strong>ロールバック</strong> … 不具合が見つかったとき、<strong>1つ前の正常な状態に巻き戻す</strong> こと。</li>
+</ul>
+<blockquote>
+<p>🚀 たとえ：できた製品をお店に運び（デプロイ）、棚に並べて売り出す（リリース）。問題があれば棚から下げて前の版に戻す（ロールバック）。</p>
+</blockquote>
+<div class="admonition success">
+<p class="admonition-title">公開前に戻し方を確認しておく</p>
+<p>多くのサービスには、ボタン1つで前のバージョンに戻す機能があります。
+<strong>万一のときの手順を、公開前に聞いておく</strong> と安心です。</p>
+</div>
+<h3 id="docker"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"/></svg></span> コンテナ ／ Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>コンテナ</strong> … アプリと必要な環境を「箱」にまとめて、<strong>どこでも同じように動かす仕組み</strong>。</li>
+<li><strong>Docker</strong> … そのコンテナを扱う代表的な道具。</li>
+</ul>
+<blockquote>
+<p>📦 たとえ：道具一式を詰めて、別の場所でもそのまま使えるようにする「箱」。</p>
+</blockquote>
+<div class="admonition warning">
+<p class="admonition-title">箱の中身は作り直すと消える</p>
+<p>コンテナは作り直せることが前提なので、<strong>中に書き込まれたファイルは作り直すと消えます</strong>。
+残したいデータは、箱の外に保存する設定（ボリューム）が要ります。</p>
+</div>
+<h3 id="cdn"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 8-4 4h3a6 6 0 0 1-6 6c-1 0-1.97-.25-2.8-.7l-1.46 1.46A7.93 7.93 0 0 0 12 20a8 8 0 0 0 8-8h3M6 12a6 6 0 0 1 6-6c1 0 1.97.25 2.8.7l1.46-1.46A7.93 7.93 0 0 0 12 4a8 8 0 0 0-8 8H1l4 4 4-4"/></svg></span> キャッシュ ／ CDN<a class="headerlink" href="#cdn" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>キャッシュ</strong> … 一度使ったデータを一時的に覚えておき、<strong>次を速くする</strong> 仕組み。</li>
+<li><strong>CDN</strong> … そのコピーを <strong>世界中の拠点に配って、近い場所から届ける</strong> ネットワーク。</li>
+</ul>
+<blockquote>
+<p>⚡ たとえ：よく使う物を手元に置いておく「一時置き場」を、世界中に用意したもの。</p>
+</blockquote>
+<div class="admonition tip">
+<p class="admonition-title">「直したのに変わらない」の第一容疑者</p>
+<p>修正を公開したのに画面が変わらないときは、プログラムではなく <strong>手元のブラウザや配信側に古いコピーが残っている</strong> だけのことがよくあります。
+まずは <strong>強制的な再読み込み</strong>（Windows: <code>Ctrl + Shift + R</code> ／ Mac: <code>⌘ + Shift + R</code>）を試してください。</p>
+</div>
+<h3 id="observability"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 4v12h18V4zm0-2h18a2 2 0 0 1 2 2v12c0 .53-.21 1.04-.59 1.41-.37.38-.88.59-1.41.59h-7v2h2v2H8v-2h2v-2H3c-.53 0-1.04-.21-1.41-.59C1.21 17.04 1 16.53 1 16V4c0-1.11.89-2 2-2m7.84 6.93c.31-.3.73-.48 1.16-.48.43.01.85.18 1.16.49.3.3.48.72.48 1.15 0 .44-.18.85-.48 1.16-.31.31-.73.48-1.16.48s-.85-.18-1.16-.48c-.3-.31-.48-.72-.48-1.16 0-.43.18-.85.48-1.16M10.07 12a2.68 2.68 0 0 0 3.86 0c.51-.5.8-1.19.8-1.91s-.29-1.42-.8-1.93-1.21-.8-1.93-.8-1.42.29-1.93.8-.8 1.21-.8 1.93.29 1.41.8 1.91M6 10.09A6.45 6.45 0 0 1 12 6c2.73 0 5.06 1.7 6 4.09a6.42 6.42 0 0 1-6 4.09c-2.73 0-5.06-1.68-6-4.09"/></svg></span> モニタリング ／ Observability（可観測性）<a class="headerlink" href="#observability" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>モニタリング</strong> … サーバーが動いているか、遅くなっていないかを <strong>見張る</strong> こと。</li>
+<li><strong>Observability</strong> … 不具合が起きたときに、<strong>中で何が起きたのかを後から追える状態</strong> にしておくこと。</li>
+</ul>
+<blockquote>
+<p>🩺 たとえ：モニタリングが「体温を毎日測る」、Observabilityが「不調のときに原因を調べられるカルテがある」。</p>
+</blockquote>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">関連する用語集</p>
+<ul>
+<li>パソコン全般の言葉 → <a href="../it-basics/">基本のIT用語集</a></li>
+<li>Git/GitHub特有の言葉 → <a href="../glossary/">GitHubの用語集</a></li>
+<li>AI・Claudeまわりの言葉 → <a href="../claude-terms/">Claudeの用語集</a></li>
+<li>AIに安全に頼むための注意 → <a href="../ai-safety/">AIと安全に付き合う</a></li>
+</ul>
+</div>
+<p>分からない言葉が減ってきたら、<a href="../ai-errors/">エラーとの付き合い方</a> も読んでおくと、つまずいたときに落ち着いて対処できます。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  ページトップへ戻る
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="フッター" >
+        
+          
+          <a href="../it-basics/" class="md-footer__link md-footer__link--prev" aria-label="前: 基本のIT用語集">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                前
+              </span>
+              <div class="md-ellipsis">
+                基本のIT用語集
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../claude-terms/" class="md-footer__link md-footer__link--next" aria-label="次: Claudeの用語集">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                次
+              </span>
+              <div class="md-ellipsis">
+                Claudeの用語集
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © はじめてのGitHub 入門ガイド
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.top", "navigation.footer", "search.highlight", "search.suggest", "content.code.copy", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
