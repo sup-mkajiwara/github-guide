@@ -58,14 +58,19 @@ VSCodeは、**文章やファイルを編集できる無料のソフト**です�
 
 === ":material-apple: Mac"
 
-    1. 公式サイトの **Download for Mac** を押す
+    1. 公式サイトの **Download for macOS** を押す
     2. ダウンロードされた `.zip` を開くと、`Visual Studio Code` アプリが出てくる
     3. それを **アプリケーション** フォルダにドラッグして移動する
     4. アプリケーションから起動する
 
-!!! quote "📷 画面キャプチャ枠（あとで差し込み）"
-    VSCode公式サイトのダウンロードボタンの画面を入れます。
-    `![VSCodeのダウンロード画面](images/setup-01-vscode.png){ width="700" }`
+<figure markdown="span">
+  ![VSCode公式サイトのトップページ。中央と右上のダウンロードボタンを赤枠で示している](images/setup-01-vscode.png){ width="700" }
+  <figcaption>赤枠のどちらのボタンからでもダウンロードできます</figcaption>
+</figure>
+
+!!! note "ボタンの文字はお使いのPCで変わります"
+    公式サイトは、開いたPCを自動で判別します。上の画像は **Mac** で開いたときのもので、
+    Windowsで開くと **Download for Windows** と表示されます。表示された **そのままのボタン** を押せばOKです。
 
 !!! tip "日本語表示にする"
     初回起動時に「日本語に変更しますか？」と出たら **「インストールして再起動」** を押すと、メニューが日本語になります。

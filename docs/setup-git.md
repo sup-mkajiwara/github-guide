@@ -58,10 +58,10 @@ flowchart TD
 | **Enter a username** | ユーザー名（半角英数字）を決める |
 | **Continue / Create account** | 次へ進む／登録を確定する |
 
-!!! quote "📷 画面キャプチャ枠（あとで差し込み）"
-    ここに **Sign up ボタンの場所** がわかる画面を入れます。
-    画像が用意できたら、この枠を次の1行に置き換えてください：
-    `![Sign upボタンの場所](images/account-01-signup.png){ width="700" }`
+<figure markdown="span">
+  ![GitHubのトップページ。右上のSign upボタンを赤枠で示している](images/account-01-signup.png){ width="700" }
+  <figcaption>右上の <strong>Sign up</strong>（赤枠）が新規登録の入口です。隣の Sign in は「すでにアカウントがある人」用</figcaption>
+</figure>
 
 !!! danger "個人情報の取り扱いに注意"
     - 登録に使うメールアドレスやパスワードは、**この資料や社内チャットに貼り付けないでください**。
