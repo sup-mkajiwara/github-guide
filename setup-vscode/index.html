@@ -1575,7 +1575,45 @@ Windowsで開くと <strong>Download for Windows</strong> と表示されます�
 <div class="admonition tip">
 <p class="admonition-title">日本語表示にする</p>
 <p>初回起動時に「日本語に変更しますか？」と出たら <strong>「インストールして再起動」</strong> を押すと、メニューが日本語になります。
-出なかった場合は、左側の <strong>拡張機能 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 13.5c0 1.76-1.3 3.22-3 3.46V20a2 2 0 0 1-2 2h-3.8v-.3a2.7 2.7 0 0 0-2.7-2.7c-1.5 0-2.7 1.21-2.7 2.7v.3H4a2 2 0 0 1-2-2v-3.8h.3C3.79 16.2 5 15 5 13.5s-1.21-2.7-2.7-2.7H2V7a2 2 0 0 1 2-2h3.04c.24-1.7 1.7-3 3.46-3s3.22 1.3 3.46 3H17a2 2 0 0 1 2 2v3.04c1.7.24 3 1.7 3 3.46M17 15h1.5a1.5 1.5 0 0 0 1.5-1.5 1.5 1.5 0 0 0-1.5-1.5H17V7h-5V5.5A1.5 1.5 0 0 0 10.5 4 1.5 1.5 0 0 0 9 5.5V7H4v2.12c1.76.68 3 2.38 3 4.38s-1.25 3.7-3 4.38V20h2.12a4.7 4.7 0 0 1 4.38-3c2 0 3.7 1.25 4.38 3H17z"/></svg></span></strong> で <code>Japanese Language Pack</code> を検索して入れれば同じです。</p>
+出なかった場合は、左側の <strong>拡張機能 <img alt="拡張機能アイコン" src="../images/setup-04-extensions-icon.png" width="18" /></strong> で <code>Japanese Language Pack</code> を検索して入れれば同じです。</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg></span> 日本語パックも「発行元」を必ず確認</p>
+<p>拡張機能ストアには、<strong>本物に似せた名前のニセ拡張</strong> が混ざることがあります。
+検索結果をそのまま押さず、拡張の名前をクリックして詳細ページを開き、<strong>次の3点</strong> を確認してください。</p>
+<table>
+<thead>
+<tr>
+<th>確認すること</th>
+<th>正しい状態</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>拡張名</strong></td>
+<td><strong><code>Japanese Language Pack for Visual Studio Code</code></strong></td>
+</tr>
+<tr>
+<td><strong>発行元（Publisher）</strong></td>
+<td><strong><code>Microsoft</code></strong> ＋ <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68zm-13 5-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9z"/></svg></span> 青い認証済みバッジ ＋ <strong><code>microsoft.com</code></strong></td>
+</tr>
+<tr>
+<td><strong>インストール数</strong></td>
+<td><strong>1,500万件以上</strong>。数百件〜数千件しかないものは疑う</td>
+</tr>
+</tbody>
+</table>
+<p>ひとつでも合わなければ <strong>入れずに閉じてください</strong>。似た名前・似たアイコンでも別物です。</p>
+</div>
+<figure>
+  <img alt="Japanese Language Pack for Visual Studio Code の拡張機能ページ。発行元 Microsoft と認証済みバッジ、インストールボタンが表示されている" src="../images/setup-02-japanese.png" width="700" />
+<br />
+<figcaption>これが本物の画面です。拡張名の下の <strong>Microsoft</strong>・青い認証済みバッジ・<strong>microsoft.com</strong> を確認してから、<strong>インストール</strong> を押してください</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">表示が少し違っても大丈夫</p>
+<p><strong>インストール</strong> ボタンは、すでに入れたあとは「アンインストール」に変わります。
+インストール数（画像では1,531万件）は撮影時点の数値なので、実際の画面では増えています。</p>
 </div>
 <hr />
 <h2 id="3">3. 画面の見方（ざっくり）<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
@@ -1584,10 +1622,15 @@ Windowsで開くと <strong>Download for Windows</strong> と表示されます�
     A[左のアイコン列&lt;br/&gt;ファイル・検索・拡張機能] --&gt; B[中央&lt;br/&gt;ファイルの編集画面]
     B --&gt; C[下のターミナル&lt;br/&gt;文字で指示する場所]</code></pre>
 <ul>
-<li><strong>左のアイコン列</strong> … <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 0H8C6.9 0 6 .9 6 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6zm4 18H8V2h7v5h5zM4 4v18h16v2H4c-1.1 0-2-.9-2-2V4z"/></svg></span> ファイル一覧、<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 13.5c0 1.76-1.3 3.22-3 3.46V20a2 2 0 0 1-2 2h-3.8v-.3a2.7 2.7 0 0 0-2.7-2.7c-1.5 0-2.7 1.21-2.7 2.7v.3H4a2 2 0 0 1-2-2v-3.8h.3C3.79 16.2 5 15 5 13.5s-1.21-2.7-2.7-2.7H2V7a2 2 0 0 1 2-2h3.04c.24-1.7 1.7-3 3.46-3s3.22 1.3 3.46 3H17a2 2 0 0 1 2 2v3.04c1.7.24 3 1.7 3 3.46M17 15h1.5a1.5 1.5 0 0 0 1.5-1.5 1.5 1.5 0 0 0-1.5-1.5H17V7h-5V5.5A1.5 1.5 0 0 0 10.5 4 1.5 1.5 0 0 0 9 5.5V7H4v2.12c1.76.68 3 2.38 3 4.38s-1.25 3.7-3 4.38V20h2.12a4.7 4.7 0 0 1 4.38-3c2 0 3.7 1.25 4.38 3H17z"/></svg></span> 拡張機能（Claudeもここから入れます）</li>
+<li><strong>左のアイコン列</strong> … <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 0H8C6.9 0 6 .9 6 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6zm4 18H8V2h7v5h5zM4 4v18h16v2H4c-1.1 0-2-.9-2-2V4z"/></svg></span> ファイル一覧、<img alt="拡張機能アイコン" src="../images/setup-04-extensions-icon.png" width="18" /> 拡張機能（Claudeもここから入れます）</li>
 <li><strong>中央</strong> … 実際に文章やコードを書くところ</li>
 <li><strong>ターミナル</strong> … メニューの「ターミナル」→「新しいターミナル」で開く。コマンドを打つ場所です</li>
 </ul>
+<figure>
+  <img alt="VSCodeの左側にある拡張機能アイコン。四角が4つ組み合わさった形をしている" src="../images/setup-04-extensions-icon.png" width="60" />
+<br />
+<figcaption>これが <strong>拡張機能</strong> のアイコンです。左のアイコン列の中にあります</figcaption>
+</figure>
 <div class="admonition note">
 <p class="admonition-title">ターミナルは怖くない</p>
 <p>ターミナルは「文字で指示を出す窓口」です。このガイドでは、貼り付けるだけの1行しか使いません。
