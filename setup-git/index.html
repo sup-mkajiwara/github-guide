@@ -756,7 +756,7 @@
   <a href="#5-vscodegithub" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. VSCodeからGitHubにサインインする
+        5. VSCodeとGitHubをつなぐ
       
     </span>
   </a>
@@ -1564,7 +1564,7 @@
   <a href="#5-vscodegithub" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. VSCodeからGitHubにサインインする
+        5. VSCodeとGitHubをつなぐ
       
     </span>
   </a>
@@ -1657,7 +1657,7 @@ VSCodeから「自分のGitHub」とやりとりできる状態になること�
     B --&gt; C[2. プロフィールの初期設定]
     C --&gt; D[3. 2段階認証]
     D --&gt; E[4. Gitを入れる]
-    E --&gt; F[5. VSCodeからサインイン]
+    E --&gt; F[5. VSCodeとGitHubをつなぐ]
     F --&gt; G([準備完了 🎉])</code></pre>
 <div class="admonition tip">
 <p class="admonition-title">むずかしいところは Claude に頼める</p>
@@ -1766,11 +1766,6 @@ VSCodeから「自分のGitHub」とやりとりできる状態になること�
 <li>メールアドレスの打ち間違いがないか、もう一度確認しましょう。</li>
 </ul>
 </div>
-<div class="admonition quote">
-<p class="admonition-title">📷 画面キャプチャ枠（あとで差し込み）</p>
-<p>確認コードの入力画面を入れる場所です。
-<code>![確認コードの入力画面](images/account-02-verify.png){ width="700" }</code></p>
-</div>
 <hr />
 <h2 id="2">2. プロフィールの初期設定<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <p>ログインできたら、最低限のプロフィールを整えます。<strong>あとからでも変更できる</strong>ので、まずは軽くでOKです。</p>
@@ -1783,11 +1778,6 @@ VSCodeから「自分のGitHub」とやりとりできる状態になること�
     A[右上のアイコンを押す] --&gt; B["Settings（設定）を押す"]
     B --&gt; C["Public profile で&lt;br/&gt;名前・アイコンを編集"]
     C --&gt; D["Update profile で保存"]</code></pre>
-<div class="admonition quote">
-<p class="admonition-title">📷 画面キャプチャ枠（あとで差し込み）</p>
-<p>Settings（設定）の場所がわかる画面を入れます。
-<code>![設定メニューの場所](images/account-03-settings.png){ width="700" }</code></p>
-</div>
 <hr />
 <h2 id="two-factor">3. 安全のための設定（2段階認証）<a class="headerlink" href="#two-factor" title="Permanent link">&para;</a></h2>
 <div class="admonition warning">
@@ -1848,16 +1838,35 @@ VSCodeから「自分のGitHub」とやりとりできる状態になること�
 <p><code>git --version</code> は「入っているか確かめる」ためのものです。意味を覚える必要はありません。</p>
 </div>
 <hr />
-<h2 id="5-vscodegithub">5. VSCodeからGitHubにサインインする<a class="headerlink" href="#5-vscodegithub" title="Permanent link">&para;</a></h2>
-<p>VSCodeと、この章で作った <strong>GitHubアカウント</strong> をつなぎます。これで「自分のGitHub」とやりとりできます。</p>
+<h2 id="5-vscodegithub">5. VSCodeとGitHubをつなぐ<a class="headerlink" href="#5-vscodegithub" title="Permanent link">&para;</a></h2>
+<p>VSCodeと、この章で作った <strong>GitHubアカウント</strong> をつなぎます。</p>
+<div class="admonition tip">
+<p class="admonition-title">ここは「今すぐやる作業」ではありません</p>
+<p><strong>結論：先にサインインしておく必要はありません。</strong>
+VSCodeは、<strong>GitHubとやりとりする操作を初めてしたときに、自動で「つないでいいですか？」と聞いてきます。</strong>
+そのときに許可すればつながるので、<strong>この節は「そういう画面が出る」と知っておくだけでOK</strong> です。</p>
+</div>
+<p>つながるのは、たとえば次のような操作をしたときです（どれも次の章以降で出てきます）。</p>
+<ul>
+<li>ソース管理パネルの <strong>「GitHubに発行（Publish to GitHub）」</strong> を押したとき</li>
+<li>初めて <strong>プッシュ（同期）</strong> したとき</li>
+</ul>
+<p>そのときの流れ：</p>
 <pre class="mermaid"><code>flowchart LR
-    A[VSCode左下の&lt;br/&gt;アカウントアイコン] --&gt; B["Sign in with GitHub&lt;br/&gt;を選ぶ"]
-    B --&gt; C[ブラウザでGitHubに&lt;br/&gt;ログイン＆許可]
+    A[GitHubとやりとりする&lt;br/&gt;操作をする] --&gt; B["VSCodeが&lt;br/&gt;許可を求める"]
+    B --&gt; C[ブラウザが開く&lt;br/&gt;→ Authorize を押す]
     C --&gt; D([接続完了 ✅])</code></pre>
-<div class="admonition quote">
-<p class="admonition-title">📷 画面キャプチャ枠（あとで差し込み）</p>
-<p>VSCode左下のアカウントアイコンからサインインする画面を入れます。
-<code>![GitHubへのサインイン](images/setup-02-signin.png){ width="700" }</code></p>
+<ol>
+<li>VSCodeに「<strong>GitHubにサインインしますか</strong>」といった確認が出るので <strong>許可（Allow / Sign in）</strong> を押す</li>
+<li>ブラウザが開いてGitHubの画面になるので、ログインして <strong>Authorize（許可）</strong> を押す</li>
+<li>「VSCodeに戻ってよいか」と聞かれたら、戻る（Open Visual Studio Code）</li>
+</ol>
+<p>これで完了です。つながったあとは、VSCode左下の <strong>アカウントアイコン</strong> に自分のGitHubアカウント名が表示されるようになります（<strong>つなぐ前は表示されません</strong>）。</p>
+<div class="admonition note">
+<p class="admonition-title">先につないでおきたい人は</p>
+<p>「本番で迷いたくないので、今つないでおきたい」という場合は、
+次の <strong>6. GitHub CLI（gh）</strong> の <code>gh auth login</code> を済ませておくのがいちばん確実です。
+Claudeに <strong>「GitHubにログインできるようにして」</strong> と頼んでもOKです。</p>
 </div>
 <hr />
 <h2 id="github-cli-gh">6. GitHub CLI（gh）を入れる（GitHub操作におすすめ）<a class="headerlink" href="#github-cli-gh" title="Permanent link">&para;</a></h2>
@@ -1915,15 +1924,15 @@ VSCodeから「自分のGitHub」とやりとりできる状態になること�
     A[VSCode] --&gt; B[Claude]
     B --&gt; C[GitHubアカウント]
     C --&gt; D[Git]
-    D --&gt; E[サインイン]
+    D --&gt; E[GitHub CLI]
     E --&gt; F([準備完了 🎉])</code></pre>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> GitHubにログインできる</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> プロフィールを設定した</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 2段階認証で安全にした</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> PCにGitを入れた</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> VSCodeからGitHubにサインインした</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> GitHub CLI（<code>gh</code>）を入れた</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> VSCodeとGitHubのつなぎ方が分かった（実際につながるのは次章から）</li>
 </ul>
 <div class="admonition success">
 <p class="admonition-title">次のステップ</p>
