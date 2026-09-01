@@ -667,7 +667,7 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. チャットを開く
+        2. チャットを開く・サインインする
       
     </span>
   </a>
@@ -1442,7 +1442,7 @@
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. チャットを開く
+        2. チャットを開く・サインインする
       
     </span>
   </a>
@@ -1533,8 +1533,8 @@
 <pre class="mermaid"><code>flowchart LR
     A[VSCode] --&gt; B[拡張機能で&lt;br/&gt;Claudeを検索]
     B --&gt; C[インストール]
-    C --&gt; D[Claudeアカウントで&lt;br/&gt;サインイン]
-    D --&gt; E[アクティビティバーの&lt;br/&gt;アイコンでチャットを開く]
+    C --&gt; D[✱アイコンで&lt;br/&gt;チャットを開く]
+    D --&gt; E[初回だけ&lt;br/&gt;サインイン]
     E --&gt; F([日本語で頼める 🎉])</code></pre>
 <hr />
 <h2 id="1-vscode">1. VSCode拡張として入れる（おすすめ）<a class="headerlink" href="#1-vscode" title="Permanent link">&para;</a></h2>
@@ -1543,8 +1543,11 @@
 <li>検索欄に <strong><code>Claude</code></strong> と入力する</li>
 <li><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 13h-2V7h2m-2 8h2v2h-2m4.73-14H8.27L3 8.27v7.46L8.27 21h7.46L21 15.73V8.27z"/></svg></span> <strong>発行元（Publisher）が <code>Anthropic</code> かどうかを必ず確認する</strong>（下の <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg></span> を参照）</li>
 <li>確認できたら <strong>インストール（Install）</strong> を押す</li>
-<li>画面の案内に従って、Claudeのアカウントでサインインする</li>
 </ol>
+<div class="admonition note">
+<p class="admonition-title">サインインはまだしません</p>
+<p>インストールした時点ではサインイン画面は出ません。次の「チャットを開く」で、初めてパネルを開いたときにサインインを求められます。</p>
+</div>
 <div class="admonition danger">
 <p class="admonition-title"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg></span> 発行元の確認は必ず（ここだけは飛ばさない）</p>
 <p>拡張機能ストアには、<strong>本物に似せた名前のニセ拡張</strong> が混ざることがあります。
@@ -1610,13 +1613,19 @@
 （会社で配布・利用ルールがある場合は、それに従ってください。）</p>
 </div>
 <hr />
-<h2 id="2">2. チャットを開く<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<p>サインインが終わったら、実際に話しかける画面を開きます。</p>
+<h2 id="2">2. チャットを開く・サインインする<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>Claudeの目印は、この <strong>✱（きらめき）アイコン</strong> です。</p>
+<figure>
+  <img alt="Claude CodeのSparkアイコン" src="../images/claude-spark-icon.svg" width="40" />
+</figure>
+<p>次のどれかの方法でクリックすると、チャット画面が開きます。</p>
 <ol>
-<li>VSCode左側の <strong>アクティビティバー</strong> に、Claudeの新しいアイコンが追加されているので、それをクリックする</li>
-<li>アイコンが見当たらないときは、<strong>コマンドパレット</strong>（<span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span> / <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span>）を開き、<code>Claude Code</code> と入力する。出てきたコマンドを選ぶと開く</li>
+<li>なにかファイルを開いた状態で、<strong>エディター右上</strong> に出る ✱ アイコンをクリックする（いちばん簡単）</li>
+<li>VSCode左側の <strong>アクティビティバー</strong> にある ✱ アイコンをクリックする（ファイルを開いていなくても常に表示されています）</li>
+<li>見当たらないときは、<strong>コマンドパレット</strong>（<span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span> / <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span>）を開き、<code>Claude Code</code> と入力して選ぶ</li>
 </ol>
-<p>初回は「Learn Claude Code」という案内画面が出ることがあります。ざっと眺めたら閉じてしまって構いません。</p>
+<p>初めて開いたときだけ、<strong>サインイン画面</strong> が表示されます。<strong>Sign in</strong> を押し、ブラウザでログインを済ませてください。</p>
+<p>サインインが終わると「Learn Claude Code」という案内チェックリストが出ます。ざっと眺めたら、右上の × で閉じてしまって構いません。</p>
 <p>画面の中に <strong>文字を入力できる欄</strong> が出てきたら準備完了です。</p>
 <div class="admonition info">
 <p class="admonition-title">正確な位置は更新されることがあります</p>
@@ -1700,8 +1709,8 @@
 <h2 id="_2">この章のまとめ<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Claude拡張を入れた</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> サインインした</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> チャット画面を開いて、日本語で話しかけられた</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> チャット画面を開いて、サインインした</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 日本語で話しかけられた</li>
 </ul>
 <div class="admonition success">
 <p class="admonition-title">次のステップ</p>
