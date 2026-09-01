@@ -669,6 +669,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 画面の名前をおぼえる
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. アクティビティバーのアイコンの意味
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 覚えておくと便利な操作
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1455,6 +1488,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 画面の名前をおぼえる
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. アクティビティバーのアイコンの意味
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 覚えておくと便利な操作
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1578,7 +1644,7 @@ Windowsで開くと <strong>Download for Windows</strong> と表示されます�
 出なかった場合は、左側の <strong>拡張機能 <img alt="拡張機能アイコン" src="../images/setup-04-extensions-icon.png" width="18" /></strong> で <code>Japanese Language Pack</code> を検索して入れれば同じです。</p>
 </div>
 <div class="admonition danger">
-<p class="admonition-title"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg></span> 日本語パックも「発行元」を必ず確認</p>
+<p class="admonition-title"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 17-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9m-6-8L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5z"/></svg></span> 「発行元」を必ず確認</p>
 <p>拡張機能ストアには、<strong>本物に似せた名前のニセ拡張</strong> が混ざることがあります。
 検索結果をそのまま押さず、拡張の名前をクリックして詳細ページを開き、<strong>次の3点</strong> を確認してください。</p>
 <table>
@@ -1626,21 +1692,218 @@ Windowsで開くと <strong>Download for Windows</strong> と表示されます�
 <li><strong>中央</strong> … 実際に文章やコードを書くところ</li>
 <li><strong>ターミナル</strong> … メニューの「ターミナル」→「新しいターミナル」で開く。コマンドを打つ場所です</li>
 </ul>
-<figure>
-  <img alt="VSCodeの左側にある拡張機能アイコン。四角が4つ組み合わさった形をしている" src="../images/setup-04-extensions-icon.png" width="60" />
-<br />
-<figcaption>これが <strong>拡張機能</strong> のアイコンです。左のアイコン列の中にあります</figcaption>
-</figure>
 <div class="admonition note">
 <p class="admonition-title">ターミナルは怖くない</p>
 <p>ターミナルは「文字で指示を出す窓口」です。このガイドでは、貼り付けるだけの1行しか使いません。
 しかも多くの場面は <strong>Claudeに頼めば代わりに実行してくれます</strong>。</p>
 </div>
 <hr />
+<h2 id="4">4. 画面の名前をおぼえる<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>このガイドや、あとで読む説明では「サイドバー」「パネル」といった <strong>場所の名前</strong> がよく出てきます。
+全部おぼえる必要はありません。<strong>「そう呼ぶんだな」</strong> くらいで大丈夫です。</p>
+<pre class="mermaid"><code>flowchart TB
+    subgraph W["VSCodeのウィンドウ"]
+        direction LR
+        A["アクティビティバー&lt;br/&gt;（左端のアイコン列）"]
+        B["サイドバー&lt;br/&gt;（ファイル一覧など）"]
+        C["エディター&lt;br/&gt;（書く・読む場所）"]
+        A --- B --- C
+    end
+    W --&gt; D["パネル（ターミナル・問題の一覧）"]
+    D --&gt; E["ステータスバー（いちばん下の細い帯）"]</code></pre>
+<table>
+<thead>
+<tr>
+<th>場所</th>
+<th>名前（日本語表示）</th>
+<th>何をするところ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>いちばん左のアイコン列</td>
+<td><strong>アクティビティバー</strong></td>
+<td>表示を切り替えるスイッチ。押すと右のサイドバーの中身が変わる</td>
+</tr>
+<tr>
+<td>その右の細長い欄</td>
+<td><strong>サイドバー</strong></td>
+<td>選んだアイコンの中身（ファイル一覧・検索結果など）が出る</td>
+</tr>
+<tr>
+<td>中央の広い場所</td>
+<td><strong>エディター</strong></td>
+<td>実際に文章やコードを書く場所。上のタブで複数のファイルを切り替えられる</td>
+</tr>
+<tr>
+<td>下側の枠</td>
+<td><strong>パネル</strong></td>
+<td>ターミナルやエラーの一覧が出る。使わないときは閉じてOK</td>
+</tr>
+<tr>
+<td>いちばん下の細い帯</td>
+<td><strong>ステータスバー</strong></td>
+<td>いま何のブランチにいるか、エラーが何件あるかなどの状態表示</td>
+</tr>
+<tr>
+<td>右側の欄</td>
+<td><strong>セカンダリサイドバー</strong></td>
+<td>最初は非表示。チャットなどを置ける予備の欄</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">英語表示のままの人へ</p>
+<p>日本語パックを入れていない場合は、それぞれ <strong>Activity Bar / Primary Side Bar / Editor / Panel / Status Bar / Secondary Side Bar</strong> と表示されます。</p>
+</div>
+<hr />
+<h2 id="5">5. アクティビティバーのアイコンの意味<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p>左端に並んでいるアイコンは、<strong>サイドバーの中身を切り替えるスイッチ</strong> です。
+このガイドでよく使うのは <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21z"/></svg></span> の付いた3つだけです。</p>
+<table>
+<thead>
+<tr>
+<th>アイコン</th>
+<th>名前</th>
+<th>できること</th>
+<th>出番</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 0H8C6.9 0 6 .9 6 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V6zm4 18H8V2h7v5h5zM4 4v18h16v2H4c-1.1 0-2-.9-2-2V4z"/></svg></span></td>
+<td><strong>エクスプローラー</strong></td>
+<td>開いているフォルダのファイル一覧。ファイルを開く・新規作成する</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21z"/></svg></span> よく使う</td>
+</tr>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg></span></td>
+<td><strong>検索</strong></td>
+<td>フォルダ全体から文字を探す・まとめて置き換える</td>
+<td>ときどき</td>
+</tr>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14c-3.36 0-4.46 1.35-4.82 2.24C9.25 16.7 10 17.76 10 19a3 3 0 0 1-3 3 3 3 0 0 1-3-3c0-1.31.83-2.42 2-2.83V7.83A2.99 2.99 0 0 1 4 5a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.31-.83 2.42-2 2.83v5.29c.88-.65 2.16-1.12 4-1.12 2.67 0 3.56-1.34 3.85-2.23A3.01 3.01 0 0 1 14 7a3 3 0 0 1 3-3 3 3 0 0 1 3 3c0 1.34-.88 2.5-2.09 2.86C17.65 11.29 16.68 14 13 14m-6 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1M7 4a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1m10 2a1 1 0 0 0-1 1 1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1"/></svg></span></td>
+<td><strong>ソース管理</strong></td>
+<td>Gitの変更を確認して <strong>コミット</strong> する。変更した行に色が付く</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21z"/></svg></span> よく使う</td>
+</tr>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m-2 14.5 6-4.5-6-4.5z"/></svg></span></td>
+<td><strong>実行とデバッグ</strong></td>
+<td>プログラムを途中で止めながら中身を調べる</td>
+<td>使いません</td>
+</tr>
+<tr>
+<td><img alt="拡張機能アイコン" src="../images/setup-04-extensions-icon.png" width="18" /></td>
+<td><strong>拡張機能</strong></td>
+<td>機能を追加する。<strong>日本語パックもClaudeもここから入れます</strong></td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.45 4.73L5.82 21z"/></svg></span> よく使う</td>
+</tr>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2M7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.5.88 4.93 1.78A7.9 7.9 0 0 1 12 20c-1.86 0-3.57-.64-4.93-1.72m11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33A7.93 7.93 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.5-1.64 4.83M12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6m0 5a1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 12 8a1.5 1.5 0 0 1 1.5 1.5A1.5 1.5 0 0 1 12 11"/></svg></span></td>
+<td><strong>アカウント</strong>（下のほう）</td>
+<td>GitHubやMicrosoftアカウントへのサインイン状態</td>
+<td>ときどき</td>
+</tr>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m-2 12c-.25 0-.46-.18-.5-.42l-.37-2.65c-.63-.25-1.17-.59-1.69-.99l-2.49 1.01c-.22.08-.49 0-.61-.22l-2-3.46a.493.493 0 0 1 .12-.64l2.11-1.66L4.5 12l.07-1-2.11-1.63a.493.493 0 0 1-.12-.64l2-3.46c.12-.22.39-.31.61-.22l2.49 1c.52-.39 1.06-.73 1.69-.98l.37-2.65c.04-.24.25-.42.5-.42h4c.25 0 .46.18.5.42l.37 2.65c.63.25 1.17.59 1.69.98l2.49-1c.22-.09.49 0 .61.22l2 3.46c.13.22.07.49-.12.64L19.43 11l.07 1-.07 1 2.11 1.63c.19.15.25.42.12.64l-2 3.46c-.12.22-.39.31-.61.22l-2.49-1c-.52.39-1.06.73-1.69.98l-.37 2.65c-.04.24-.25.42-.5.42zm1.25-18-.37 2.61c-1.2.25-2.26.89-3.03 1.78L5.44 7.35l-.75 1.3L6.8 10.2a5.55 5.55 0 0 0 0 3.6l-2.12 1.56.75 1.3 2.43-1.04c.77.88 1.82 1.52 3.01 1.76l.37 2.62h1.52l.37-2.61c1.19-.25 2.24-.89 3.01-1.77l2.43 1.04.75-1.3-2.12-1.55c.4-1.17.4-2.44 0-3.61l2.11-1.55-.75-1.3-2.41 1.04a5.42 5.42 0 0 0-3.03-1.77L12.75 4z"/></svg></span></td>
+<td><strong>管理</strong>（いちばん下の歯車）</td>
+<td>設定・テーマ・ショートカットの変更</td>
+<td>ときどき</td>
+</tr>
+</tbody>
+</table>
+<figure>
+  <img alt="VSCodeの左側にある拡張機能アイコン。四角が4つ組み合わさった形をしている" src="../images/setup-04-extensions-icon.png" width="60" />
+<br />
+<figcaption>これが <strong>拡張機能</strong> のアイコンです。アクティビティバーの中にあります</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">アイコンの数は人によって違います</p>
+<p>拡張機能を入れると、この列にアイコンが増えることがあります。
+<strong>表示されているアイコンの数がガイドと違っていても問題ありません。</strong></p>
+</div>
+<hr />
+<h2 id="6">6. 覚えておくと便利な操作<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<p>「メニューのどこにあるか分からない」ときは、<strong>コマンドパレット</strong> を開いて名前で探すのがいちばん早いです。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"/></svg></span> Windows</label><label for="__tabbed_2_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg></span> Mac</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>やりたいこと</th>
+<th>ショートカット</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>コマンドパレット</strong>（機能を名前で探す何でも窓口）</td>
+<td><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span></td>
+</tr>
+<tr>
+<td>サイドバーを開く／閉じる</td>
+<td><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-b">B</kbd></span></td>
+</tr>
+<tr>
+<td>ファイルを名前で開く</td>
+<td><span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-p">P</kbd></span></td>
+</tr>
+<tr>
+<td>ターミナルを開く／閉じる</td>
+<td>メニューの <strong>ターミナル → 新しいターミナル</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>やりたいこと</th>
+<th>ショートカット</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>コマンドパレット</strong>（機能を名前で探す何でも窓口）</td>
+<td><span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-shift">Shift</kbd><span>+</span><kbd class="key-p">P</kbd></span></td>
+</tr>
+<tr>
+<td>サイドバーを開く／閉じる</td>
+<td><span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-b">B</kbd></span></td>
+</tr>
+<tr>
+<td>ファイルを名前で開く</td>
+<td><span class="keys"><kbd class="key-command">Cmd</kbd><span>+</span><kbd class="key-p">P</kbd></span></td>
+</tr>
+<tr>
+<td>ターミナルを開く／閉じる</td>
+<td>メニューの <strong>ターミナル → 新しいターミナル</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">迷ったらコマンドパレット</p>
+<p>コマンドパレットを開いて、やりたいことを日本語で打ち込む（例：<code>ターミナル</code>）と、
+候補が絞り込まれます。<strong>メニューを探し回らなくて済む</strong> ので、最初に覚えると楽になります。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">もっと詳しく知りたいとき</p>
+<p>VSCode公式の画面説明ページ（英語）にすべて載っています。
+<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2z"/></svg></span> <a href="https://code.visualstudio.com/docs/editing/getting-started/userinterface">VS Code User Interface（公式ドキュメント）</a></p>
+</div>
+<hr />
 <h2 id="_2">この章のまとめ<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> VSCodeを入れた</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 起動して、画面のどこに何があるか分かった</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 拡張機能を入れるとき、<strong>発行元</strong> を確認するようになった</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 画面の名前（アクティビティバー・サイドバー・エディター・パネル）が分かった</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> 左のアイコンがそれぞれ何をするものか分かった</li>
 </ul>
 <div class="admonition success">
 <p class="admonition-title">次のステップ</p>
